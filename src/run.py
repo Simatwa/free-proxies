@@ -15,7 +15,7 @@ class Basket:
         "Accept": "*/*",
     }
     proxy_sources: dict[str, str] = {
-        "SpeedX": "https://github.com/TheSpeedX/PROXY-List"
+        "SpeedX": "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master"
     }
 
     request_timeout: int = 5
@@ -31,7 +31,7 @@ class Basket:
     }
 
     test_resource_url: str = (
-        "https://github.com/Simatwa/free-proxies/blob/master/files/test.md"
+        "https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/test.md"
     )
 
     @classmethod
@@ -65,10 +65,13 @@ class Basket:
         Returns:
             bool: is proxy working?
         """
-        proxy_in_dict = {"https://": f"{type}://{proxy}"}
+        proxy_in_dict = {
+            "https://": f"{type}://{proxy}",
+            "http://" : f"{type}://{proxy}"
+            }
         try:
             resp = await cls.fetch(
-                Basket.test_resource_url, params={"raw": True}, proxy=proxy_in_dict
+                Basket.test_resource_url, proxy=proxy_in_dict
             )
             assert resp.is_success == True, f"{proxy} not working"
             logging.info(f"Working proxy : ({type}, {proxy})")
@@ -100,7 +103,7 @@ class HttpProxies:
 
     def __init__(self):
 
-        self.proxy_source: str = Basket.proxy_sources.get("SpeedX") + "/blob/master"
+        self.proxy_source: str = Basket.proxy_sources.get("SpeedX")
         self.proxy_list: list = []
         self.working_proxies: list = []
         self.identity = "http"
@@ -129,7 +132,7 @@ class Socks4Proxies:
 
     def __init__(self):
 
-        self.proxy_source: str = Basket.proxy_sources.get("SpeedX") + "/blob/master"
+        self.proxy_source: str = Basket.proxy_sources.get("SpeedX")
         self.proxy_list: list = []
         self.working_proxies: list = []
         self.identity = "socks4"
@@ -158,7 +161,7 @@ class Socks5Proxies:
 
     def __init__(self):
 
-        self.proxy_source: str = Basket.proxy_sources.get("SpeedX") + "/blob/master"
+        self.proxy_source: str = Basket.proxy_sources.get("SpeedX")
         self.proxy_list: list = []
         self.working_proxies: list = []
         self.identity = "socks5"
