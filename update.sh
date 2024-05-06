@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+git checkout master
 ./start.sh
 git add .
 git commit -m "Update proxies - $(date '+%A %d-%m-%Y %H:%M:%S %Z')"
