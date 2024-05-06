@@ -202,7 +202,6 @@ if __name__=="__main__":
         target=Socks5Proxies().run,
     )
     http_task.start()
-    http_task.join()
     socks4_task.start()
     socks5_task.start()
     http_task.join()
