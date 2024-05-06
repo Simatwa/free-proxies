@@ -76,7 +76,7 @@ class Basket:
             return True
         except Exception as e:
             logging.error(
-                f'[{proxy_in_dict['https']}] {e.args[1] if e.args and len(e.args)>1 else e}'
+                f'[{proxy_in_dict["https"]}] {e.args[1] if e.args and len(e.args)>1 else e}'
             )
             return False
 
