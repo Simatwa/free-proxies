@@ -74,7 +74,9 @@ class Basket:
             logging.info(f"Working proxy : ({type}, {proxy})")
             return True
         except Exception as e:
-            logging.exception(e)
+            logging.error(
+                f'[{proxy_in_dict['https://']}] {e.args[1] if e.args and len(e.args)>1 else e}'
+            )
 
     @classmethod
     async def save_proxy(
@@ -183,7 +185,7 @@ class Socks5Proxies:
 async def main():
     tasks = [
         asyncio.create_task(HttpProxies().run()),
-        # asyncio.create_task(Socks4Proxies().run()),
+        asyncio.create_task(Socks4Proxies().run()),
         asyncio.create_task(Socks5Proxies().run()),
     ]
     await asyncio.gather(*tasks)
