@@ -1,9 +1,10 @@
 # fetch list, http, socks4, sock5
 # iterate over and test each
-import requests
+import httpx
 import typing
 import logging
 import json
+import asyncio
 from pathlib import Path
 
 
@@ -14,12 +15,10 @@ class Basket:
         "Accept": "*/*",
     }
     proxy_sources: dict[str, str] = {
-        "SpeedX": "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master"
+        "SpeedX": "https://github.com/TheSpeedX/PROXY-List"
     }
 
-    request_timeout: int = 3
-
-    thread_amount:int = 5
+    request_timeout: int = 5
 
     indent_level: int = 3
 
@@ -32,11 +31,11 @@ class Basket:
     }
 
     test_resource_url: str = (
-        "https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/test.md"
+        "https://github.com/Simatwa/free-proxies/blob/master/files/test.md"
     )
 
     @classmethod
-    def fetch(cls, url: str, **kwargs) -> requests.Response:
+    async def fetch(cls, url: str, **kwargs) -> httpx.Response:
         """ "Make Get request
 
         Args:
@@ -46,42 +45,41 @@ class Basket:
         Returns:
             httpx.Response: response
         """
-        response = requests.get(url,headers=Basket.request_headers, **kwargs)
-        response.raise_for_status()
-        return response
+        async with httpx.AsyncClient(
+            headers=Basket.request_headers, follow_redirects=True, **kwargs
+        ) as client:
+            response = await client.get(url)
+            response.raise_for_status()
+            return response
 
     @classmethod
-    def check_status(
-        cls, proxy: str, type: typing.Literal["http", "socks4", "socks5"]
+    async def check_status(
+        cls, proxy: str, type: typing.Literal["https", "socks4", "socks5"]
     ) -> bool:
         """Test working status of proxy
 
         Args:
             proxy (str): host:port
-            type (typing.Literal["http", "socks4", "socks5"]):
+            type (typing.Literal["https", "socks4", "socks5"]):
 
         Returns:
             bool: is proxy working?
         """
-        proxy_in_dict = {
-            "https": f"{type}://{proxy}"
-            }
+        proxy_in_dict = {"https://": f"{type}://{proxy}"}
         try:
-            resp = cls.fetch(
-                Basket.test_resource_url, proxies=proxy_in_dict
+            resp = await cls.fetch(
+                Basket.test_resource_url, params={"raw": True}, proxy=proxy_in_dict
             )
-            resp.raise_for_status()
-            assert resp.ok, f"{proxy} not working"
-            logging.info(f"{resp.status_code}, {resp.reason} : ({type}, {proxy})")
+            assert resp.is_success == True, f"{proxy} not working"
+            logging.info(f"Working proxy : ({type}, {proxy})")
             return True
         except Exception as e:
             logging.error(
-                f'[{proxy_in_dict["https"]}] {e.args[1] if e.args and len(e.args)>1 else e}'
+                f'{proxy_in_dict["https://"]} {e.args[1] if e.args and len(e.args)>1 else e}'
             )
-            return False
 
     @classmethod
-    def save_proxy(
+    async def save_proxy(
         cls,
         identity: str,
         proxy: list[str],
@@ -102,108 +100,102 @@ class HttpProxies:
 
     def __init__(self):
 
-        self.proxy_source: str = Basket.proxy_sources.get("SpeedX")
+        self.proxy_source: str = Basket.proxy_sources.get("SpeedX") + "/blob/master"
         self.proxy_list: list = []
         self.working_proxies: list = []
         self.identity = "http"
 
-    def update_proxy_list(self):
-        latest_proxy_list = Basket.fetch(
+    async def update_proxy_list(self):
+        latest_proxy_list = await Basket.fetch(
             self.proxy_source + "/http.txt", params={"raw": True}
         )
         self.proxy_list.extend(latest_proxy_list.text.split("\n"))
 
-    def run(self):
+    async def run(self):
         """Test proxies"""
-        self.update_proxy_list()
+        await self.update_proxy_list()
         for proxy in self.proxy_list:
-            is_proxy_working = Basket.check_status(proxy, "http")
+            is_proxy_working = await Basket.check_status(proxy, "https")
             if is_proxy_working:
                 self.working_proxies.append(proxy)
-                Basket.save_proxy(
+                await Basket.save_proxy(
                     self.identity,
                     self.working_proxies,
                 )
 
 
 class Socks4Proxies:
-    """Hunt down socks4 proxies"""
+    """Hunt down http proxies"""
 
     def __init__(self):
 
-        self.proxy_source: str = Basket.proxy_sources.get("SpeedX")
+        self.proxy_source: str = Basket.proxy_sources.get("SpeedX") + "/blob/master"
         self.proxy_list: list = []
         self.working_proxies: list = []
         self.identity = "socks4"
 
-    def update_proxy_list(self):
-        latest_proxy_list = Basket.fetch(
+    async def update_proxy_list(self):
+        latest_proxy_list = await Basket.fetch(
             self.proxy_source + "/socks4.txt", params={"raw": True}
         )
         self.proxy_list.extend(latest_proxy_list.text.split("\n"))
 
-    def run(self):
+    async def run(self):
         """Test proxies"""
-        self.update_proxy_list()
+        await self.update_proxy_list()
         for proxy in self.proxy_list:
-            is_proxy_working = Basket.check_status(proxy, self.identity)
+            is_proxy_working = await Basket.check_status(proxy, self.identity)
             if is_proxy_working:
                 self.working_proxies.append(proxy)
-                Basket.save_proxy(
+                await Basket.save_proxy(
                     self.identity,
                     self.working_proxies,
                 )
 
 
-
 class Socks5Proxies:
-    """Hunt down socks5 proxies"""
+    """Hunt down http proxies"""
 
     def __init__(self):
 
-        self.proxy_source: str = Basket.proxy_sources.get("SpeedX")
+        self.proxy_source: str = Basket.proxy_sources.get("SpeedX") + "/blob/master"
         self.proxy_list: list = []
         self.working_proxies: list = []
         self.identity = "socks5"
 
-    def update_proxy_list(self):
-        latest_proxy_list = Basket.fetch(
+    async def update_proxy_list(self):
+        latest_proxy_list = await Basket.fetch(
             self.proxy_source + "/socks5.txt", params={"raw": True}
         )
         self.proxy_list.extend(latest_proxy_list.text.split("\n"))
 
-    def run(self):
+    async def run(self):
         """Test proxies"""
-        self.update_proxy_list()
+        await self.update_proxy_list()
         for proxy in self.proxy_list:
-            is_proxy_working = Basket.check_status(proxy, self.identity)
+            is_proxy_working = await Basket.check_status(proxy, self.identity)
             if is_proxy_working:
                 self.working_proxies.append(proxy)
-                Basket.save_proxy(
+                await Basket.save_proxy(
                     self.identity,
                     self.working_proxies,
                 )
 
-if __name__=="__main__":
+
+async def main():
+    tasks = [
+        asyncio.create_task(HttpProxies().run()),
+        asyncio.create_task(Socks4Proxies().run()),
+        asyncio.create_task(Socks5Proxies().run()),
+    ]
+    await asyncio.gather(*tasks)
+
+
+if __name__ == "__main__":
     logging.getLogger("httpx").setLevel(logging.ERROR)
     logging.basicConfig(
         format="%(asctime)s - %(levelname)s : %(message)s",
         level=logging.INFO,
         datefmt="%d-%b-%Y %H:%M:%S",
     )
-    from threading import Thread
-    http_task = Thread(
-        target = HttpProxies().run,
-    )
-    socks4_task = Thread(
-        target=Socks4Proxies().run,
-    )
-    socks5_task = Thread(
-        target=Socks5Proxies().run,
-    )
-    http_task.start()
-    socks4_task.start()
-    socks5_task.start()
-    http_task.join()
-    socks4_task.join()
-    socks5_task.join()
+    asyncio.run(main())
