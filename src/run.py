@@ -17,7 +17,7 @@ class Basket:
         "SpeedX": "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master"
     }
 
-    request_timeout: int = 1
+    request_timeout: int = 3
 
     thread_amount:int = 5
 
