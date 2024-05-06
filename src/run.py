@@ -26,7 +26,6 @@ class Basket:
 
     path_to_proxies: dict[str, Path] = {
         "http": proxy_dir / "http.json",
-        "socks4": proxy_dir / "sock4.json",
         "socks5": proxy_dir / "socks5.json",
     }
 
@@ -124,35 +123,6 @@ class HttpProxies:
                 )
 
 
-class Socks4Proxies:
-    """Hunt down http proxies"""
-
-    def __init__(self):
-
-        self.proxy_source: str = Basket.proxy_sources.get("SpeedX") + "/blob/master"
-        self.proxy_list: list = []
-        self.working_proxies: list = []
-        self.identity = "socks4"
-
-    async def update_proxy_list(self):
-        latest_proxy_list = await Basket.fetch(
-            self.proxy_source + "/socks4.txt", params={"raw": True}
-        )
-        self.proxy_list.extend(latest_proxy_list.text.split("\n"))
-
-    async def run(self):
-        """Test proxies"""
-        await self.update_proxy_list()
-        for proxy in self.proxy_list:
-            is_proxy_working = await Basket.check_status(proxy, self.identity)
-            if is_proxy_working:
-                self.working_proxies.append(proxy)
-                await Basket.save_proxy(
-                    self.identity,
-                    self.working_proxies,
-                )
-
-
 class Socks5Proxies:
     """Hunt down http proxies"""
 
@@ -185,7 +155,6 @@ class Socks5Proxies:
 async def main():
     tasks = [
         asyncio.create_task(HttpProxies().run()),
-        asyncio.create_task(Socks4Proxies().run()),
         asyncio.create_task(Socks5Proxies().run()),
     ]
     await asyncio.gather(*tasks)
