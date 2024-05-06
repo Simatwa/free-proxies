@@ -1,0 +1,1 @@
+# This file will be fetched to test working status of proxies.
