@@ -18,7 +18,7 @@ class Basket:
         "SpeedX": "https://github.com/TheSpeedX/PROXY-List"
     }
 
-    request_timeout: int = 5
+    request_timeout: int = 3
 
     indent_level: int = 3
 
