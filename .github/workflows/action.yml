@@ -2,7 +2,7 @@ name: PROXY Updater
 
 on:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '0 */12 * * *'
   workflow_dispatch:
     inputs:
       logLevel:
