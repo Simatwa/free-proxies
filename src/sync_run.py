@@ -56,11 +56,11 @@ def get_proxies() -> dict[str, list[str]]:
     ).text.split("\n")
     logging.info(f"Total http proxies {len(http_proxies)}")
     socks4_proxies = fetch(
-        "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt"
+        "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt"
     ).text.split("\n")
     logging.info(f"Total socks4 proxies {len(socks4_proxies)}")
     socks5_proxies = fetch(
-        "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt"
+        "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt"
     ).text.split("\n")
     logging.info(f"Total socks5 proxies {len(socks5_proxies)}")
     logging.warning(
@@ -137,9 +137,9 @@ def save_proxies():
     # combined
     write(path_to_proxies["proxies"], working_proxy_cache)
 
-    select_random_proxies()
-
     write(path_to_proxies["metadata"], generate_metadata())
+
+    select_random_proxies()
 
 
 def main():
