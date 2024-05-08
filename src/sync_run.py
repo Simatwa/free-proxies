@@ -62,9 +62,7 @@ def get_proxies() -> dict[str, list[str]]:
     logging.warning(
         f"Maximum running time {str(datetime.timedelta(seconds=(len(http_proxies+socks4_proxies+socks5_proxies)/thread_amount)*request_timeout)).split('.')[0].zfill(8)}"
     )
-    return dict(
-        http=http_proxies[:10], socks4=socks4_proxies[:10], socks5=socks5_proxies[:10]
-    )
+    return dict(http=http_proxies, socks4=socks4_proxies, socks5=socks5_proxies)
 
 
 def test_proxy(proxy_type: str, proxy) -> typing.NoReturn:
