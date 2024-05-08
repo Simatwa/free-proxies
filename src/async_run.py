@@ -1,5 +1,3 @@
-# fetch list, http, socks4, sock5
-# iterate over and test each
 import httpx
 import typing
 import logging
