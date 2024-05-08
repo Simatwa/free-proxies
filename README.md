@@ -1,5 +1,5 @@
 # free-proxies
-Free to use **http**, **socks4** and **socks5** proxies updated every hour.
+Free to use **http**, **socks4** and **socks5** proxies that gets updated every 30 minutes.
 
 ## Download
 
