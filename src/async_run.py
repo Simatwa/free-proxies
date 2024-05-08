@@ -109,7 +109,7 @@ class HttpProxies:
             self.proxy_source + "/http.txt", params={"raw": True}
         )
         self.proxy_list.extend(latest_proxy_list.text.split("\n"))
-        logging.info(f'Total http proxies {len(self.proxy_list)}')
+        logging.info(f"Total http proxies {len(self.proxy_list)}")
 
     async def run(self):
         """Test proxies"""
