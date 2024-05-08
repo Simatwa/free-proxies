@@ -25,6 +25,7 @@ path_to_proxies: dict[str, Path] = {
     "metadata": proxy_dir / "metadata.json",
 }
 
+
 test_proxy_url = (
     "https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/test.md"
 )
@@ -140,6 +141,7 @@ def save_proxies():
     write(path_to_proxies["metadata"], generate_metadata())
 
     select_random_proxies()
+    write(proxy_dir / "timestamp.json", dict(utc=datetime.datetime.now(datetime.UTC)))
 
 
 def main():
