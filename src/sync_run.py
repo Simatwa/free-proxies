@@ -64,7 +64,7 @@ def get_proxies() -> dict[str, list[str]]:
     ).text.split("\n")
     logging.info(f"Total socks5 proxies {len(socks5_proxies)}")
     logging.warning(
-        f"Maximum running time {str(datetime.timedelta(seconds=(len(http_proxies+socks4_proxies+socks5_proxies)/thread_amount)*request_timeout)).split('.')[0].zfill(8)}"
+        f"Estimated running time {str(datetime.timedelta(seconds=(len(http_proxies+socks4_proxies+socks5_proxies)/thread_amount)*request_timeout)).split('.')[0].zfill(8)}"
     )
     return dict(http=http_proxies, socks4=socks4_proxies, socks5=socks5_proxies)
 
