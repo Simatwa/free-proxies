@@ -10,7 +10,7 @@ request_timeout = 5
 
 indentation_level = 4
 
-thread_amount = 22
+thread_amount = 100
 
 proxy_dir = Path(__file__).parents[1] / "files"
 
