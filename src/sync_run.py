@@ -10,7 +10,7 @@ request_timeout = 5
 
 indentation_level = 4
 
-thread_amount = 20
+thread_amount = 22
 
 proxy_dir = Path(__file__).parents[1] / "files"
 
@@ -50,7 +50,7 @@ def get_proxies() -> dict[str, list[str]]:
     )
     return dict(
         http=http_proxies,
-        socks4=socks4_proxies, 
+        socks4=socks4_proxies,
         socks5=socks5_proxies
         )
 

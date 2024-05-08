@@ -1,18 +1,25 @@
 # free-proxies
-Free to use http and socks5 proxies updated every 12 hours.
+Free to use http, sccks4 socks5 proxies updated every 1 hour.
 
 ## Download
 
 ### http
 
-```
-https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/http.json
-```
+   ```
+   https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/http.json
+   ```
+
+### socks4
+
+   ```
+   https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/socks4.json
+   ```
+
 ### socks5
 
-```
-https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/socks5.json
-```
+   ```
+   https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/socks5.json
+   ```
 
 ## Credits
 
