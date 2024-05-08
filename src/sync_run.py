@@ -4,6 +4,7 @@ import typing
 import threading
 import json
 import datetime
+import random
 from pathlib import Path
 
 request_timeout = 5
@@ -19,6 +20,7 @@ path_to_proxies: dict[str, Path] = {
     "socks4": proxy_dir / "socks4.json",
     "socks5": proxy_dir / "socks5.json",
     "proxies": proxy_dir / "proxies.json",
+    "random": proxy_dir / "random.json",
 }
 
 test_proxy_url = (
@@ -79,12 +81,37 @@ def test_proxy(proxy_type: str, proxy) -> typing.NoReturn:
 
 
 def save_proxies():
+    def write(path: Path, data: dict):
+        with Path.open(path, "w") as fh:
+            json.dump(data, fh, indent=indentation_level)
+
+    def select_random_proxies():
+        random_proxies: list[str] = []
+        for proxy_type, proxies in working_proxy_cache.items():
+            if len(proxies) > 1:
+                random_proxies.extend(
+                    [
+                        f"{proxy_type}://{proxy}"
+                        for proxy in random.sample(
+                            proxies, round((3 / 4) * len(proxies))
+                        )
+                    ]
+                )
+            elif proxies:
+                random_proxies.append(f"{proxy_type}://{proxies[0]}")
+
+        write(
+            path_to_proxies["random"],
+            dict(proxies=random.sample(random_proxies, len(random_proxies))),
+        )
+
     for proxy_type, proxies in working_proxy_cache.items():
-        with Path.open(path_to_proxies[proxy_type], "w") as fh:
-            json.dump(dict(proxies=proxies), fh, indent=indentation_level)
+        write(path_to_proxies[proxy_type], dict(proxies=proxies))
+
     # combined
-    with Path.open(path_to_proxies["proxies"], "w") as fh:
-        json.dump(working_proxy_cache, fh, indent=indentation_level)
+    write(path_to_proxies["proxies"], working_proxy_cache)
+
+    select_random_proxies()
 
 
 def main():

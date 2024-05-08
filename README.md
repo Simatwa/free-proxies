@@ -3,28 +3,34 @@ Free to use http, sccks4 socks5 proxies updated every 1 hour.
 
 ## Download
 
-### http
+1. ### http
 
    ```
    https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/http.json
    ```
 
-### socks4
+2. ### socks4
 
    ```
    https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/socks4.json
    ```
 
-### socks5
+3. ### socks5
 
    ```
    https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/socks5.json
    ```
 
-### Combined
+4. ### Combined
 
    ```
    https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/proxies.json
+   ```
+
+5. ### Random
+
+   ```
+   https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/random.json
    ```
 
 ## Credits
