@@ -49,8 +49,8 @@ def get_proxies() -> dict[str, list[str]]:
         f"Maximum running time {str(datetime.timedelta(seconds=(len(http_proxies+socks4_proxies+socks5_proxies)/thread_amount)*request_timeout)).split('.')[0].zfill(8)}"
     )
     return dict(
-        #http=http_proxies,
-        #socks4=socks4_proxies, 
+        http=http_proxies,
+        socks4=socks4_proxies, 
         socks5=socks5_proxies
         )
 
@@ -92,6 +92,7 @@ def main():
                 logging.warning(f"Waiting currrent running {thread_amount} threads to complete.")
                 for running_task in tasks:
                     running_task.join()
+                tasks.clear()
             else:
                 tasks.append(task)
                 task.start()
