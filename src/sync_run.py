@@ -18,6 +18,7 @@ path_to_proxies: dict[str, Path] = {
     "http": proxy_dir / "http.json",
     "socks4": proxy_dir / "socks4.json",
     "socks5": proxy_dir / "socks5.json",
+    "proxies": proxy_dir / "proxies.json",
 }
 
 test_proxy_url = (
@@ -61,33 +62,38 @@ def get_proxies() -> dict[str, list[str]]:
     logging.warning(
         f"Maximum running time {str(datetime.timedelta(seconds=(len(http_proxies+socks4_proxies+socks5_proxies)/thread_amount)*request_timeout)).split('.')[0].zfill(8)}"
     )
-    return dict(http=http_proxies, socks4=socks4_proxies, socks5=socks5_proxies)
+    return dict(
+        http=http_proxies[:10], socks4=socks4_proxies[:10], socks5=socks5_proxies[:10]
+    )
 
 
-def test_proxy_and_save(proxy_type: str, proxy) -> typing.NoReturn:
+def test_proxy(proxy_type: str, proxy) -> typing.NoReturn:
     try:
         resp = fetch(test_proxy_url, proxies=dict(https=f"{proxy_type}://{proxy}"))
         resp.raise_for_status()
         if resp.ok:
             logging.info(f"Working proxy ({proxy_type}, {proxy})")
-            with Path.open(path_to_proxies[proxy_type], "r") as fh1:
-                with Path.open(path_to_proxies[proxy_type], "w") as fh2:
-                    saved_proxy = json.load(fh1)
-                    saved_proxy[proxy_type].append(proxy)
-                    json.dump(saved_proxy, fh2, indent=indentation_level)
+            working_proxy_cache[proxy_type].append(proxy)
     except Exception as e:
         logging.error(
             f"Failed ({proxy_type}, {proxy}) - {e.args[1] if e.args and len(e.args)>1 else e}"
         )
 
 
+def save_proxies():
+    for proxy_type, proxies in working_proxy_cache.items():
+        with Path.open(path_to_proxies[proxy_type], "w") as fh:
+            json.dump(dict(proxies=proxies), fh, indent=indentation_level)
+    # combined
+    with Path.open(path_to_proxies["proxies"], "w") as fh:
+        json.dump(working_proxy_cache, fh, indent=indentation_level)
+
+
 def main():
     for proxy_type, proxies in get_proxies().items():
         tasks: list[threading.Thread] = []
         for index, proxy in enumerate(proxies, start=1):
-            task = threading.Thread(
-                target=test_proxy_and_save, args=(proxy_type, proxy)
-            )
+            task = threading.Thread(target=test_proxy, args=(proxy_type, proxy))
             if index % thread_amount == 0:
                 logging.warning(
                     f"Waiting currrent running {thread_amount} threads to complete."
@@ -98,6 +104,7 @@ def main():
             else:
                 tasks.append(task)
                 task.start()
+    save_proxies()
 
 
 if __name__ == "__main__":
@@ -107,9 +114,6 @@ if __name__ == "__main__":
         datefmt="%d-%b-%Y %H:%M:%S",
     )
     try:
-        for proxy_type, path in path_to_proxies.items():
-            with Path.open(path, "w") as fh:
-                json.dump(dict(proxy_type=[]), fh, indent=indentation_level)
         main()
     except KeyboardInterrupt:
         print("[*] Surrendering to the master.")
