@@ -33,6 +33,12 @@ Free to use **http**, **socks4** and **socks5** proxies updated every hour.
    https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/random.json
    ```
 
+6. ### Metadata
+
+   ```
+   https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/metadata.json
+   ```
+
 ## Credits
 
 - [x] [TheSpeedX/PROXY-List](https://github.com/TheSpeedX/PROXY-List)

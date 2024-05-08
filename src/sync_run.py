@@ -5,13 +5,14 @@ import threading
 import json
 import datetime
 import random
+import time
 from pathlib import Path
 
 request_timeout = 5
 
 indentation_level = 4
 
-thread_amount = 100
+thread_amount = 110
 
 proxy_dir = Path(__file__).parents[1] / "files"
 
@@ -21,6 +22,7 @@ path_to_proxies: dict[str, Path] = {
     "socks5": proxy_dir / "socks5.json",
     "proxies": proxy_dir / "proxies.json",
     "random": proxy_dir / "random.json",
+    "metadata": proxy_dir / "metadata.json",
 }
 
 test_proxy_url = (
@@ -80,6 +82,27 @@ def test_proxy(proxy_type: str, proxy) -> typing.NoReturn:
         )
 
 
+def generate_metadata() -> dict[str, dict[str, str]]:
+    proxy_metadata: dict[str, dict[str, str]] = {}
+    global request_timeout
+    request_timeout = 3
+    for proxy_type, proxies in working_proxy_cache.items():
+        logging.info(f"Generating metadata for {proxy_type} proxies - {len(proxies)}")
+        for proxy in proxies:
+            try:
+                proxy = f"{proxy_type}://{proxy}"
+                start_time = time.time()
+                resp = fetch("http://ip-api.com/json", proxies=dict(http=proxy))
+                response_time = time.time() - start_time
+                resp.raise_for_status()
+                proxy_info = resp.json()
+                proxy_info["response_time"] = response_time
+                proxy_metadata[proxy] = proxy_info
+            except Exception as e:
+                logging.debug(f"Fetching proxy ({proxy}) metadata failed - {e}")
+    return proxy_metadata
+
+
 def save_proxies():
     def write(path: Path, data: dict):
         with Path.open(path, "w") as fh:
@@ -112,6 +135,8 @@ def save_proxies():
     write(path_to_proxies["proxies"], working_proxy_cache)
 
     select_random_proxies()
+
+    write(path_to_proxies["metadata"], generate_metadata())
 
 
 def main():
