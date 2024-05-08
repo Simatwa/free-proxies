@@ -77,7 +77,7 @@ def test_proxy(proxy_type: str, proxy) -> typing.NoReturn:
             logging.info(f"Working proxy ({proxy_type}, {proxy})")
             working_proxy_cache[proxy_type].append(proxy)
     except Exception as e:
-        logging.error(
+        logging.debug(
             f"Failed ({proxy_type}, {proxy}) - {e.args[1] if e.args and len(e.args)>1 else e}"
         )
 
@@ -94,12 +94,15 @@ def generate_metadata() -> dict[str, dict[str, str]]:
                 start_time = time.time()
                 resp = fetch("http://ip-api.com/json", proxies=dict(http=proxy))
                 response_time = time.time() - start_time
-                resp.raise_for_status()
                 proxy_info = resp.json()
                 proxy_info["response_time"] = response_time
                 proxy_metadata[proxy] = proxy_info
+                logging.info(
+                    f"Metadata Generated for {proxy}  ({proxy_info['country']} - {proxy_info['status']})"
+                )
             except Exception as e:
                 logging.debug(f"Fetching proxy ({proxy}) metadata failed - {e}")
+
     return proxy_metadata
 
 
