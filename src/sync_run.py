@@ -230,7 +230,7 @@ if __name__ == "__main__":
         "--indent",
         metavar="INT",
         type=int,
-        help="Indentation level for json outputs- %(default)s",
+        help="Indentation level for json outputs - %(default)s",
         default=indentation_level,
     )
     parser.add_argument(
