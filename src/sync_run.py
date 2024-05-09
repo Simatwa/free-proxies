@@ -8,6 +8,8 @@ import random
 import time
 from pathlib import Path
 
+__version__ = "0.0.4"
+
 request_timeout = 5
 
 indentation_level = 4
@@ -15,16 +17,6 @@ indentation_level = 4
 thread_amount = 310
 
 proxy_dir = Path(__file__).parents[1] / "files"
-
-path_to_proxies: dict[str, Path] = {
-    "http": proxy_dir / "http.json",
-    "socks4": proxy_dir / "socks4.json",
-    "socks5": proxy_dir / "socks5.json",
-    "proxies": proxy_dir / "proxies.json",
-    "random": proxy_dir / "random.json",
-    "metadata": proxy_dir / "metadata.json",
-}
-
 
 test_proxy_url = (
     "https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/test.md"
@@ -196,10 +188,85 @@ def main():
 
 
 if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        prog="free-proxies",
+        description="Generate free to use http, socks4 and socks5 proxies.",
+    )
+    parser.add_argument(
+        "-v", "--version", action="version", version=f"%(prog)s v{__version__}"
+    )
+    parser.add_argument(
+        "threads",
+        nargs="?",
+        type=int,
+        help="Threads for making requests - %(default)s",
+        default=thread_amount,
+    )
+    parser.add_argument(
+        "-t",
+        "--timeout",
+        metavar="INT",
+        type=int,
+        help="Http request timeout in seconds - %(default)s",
+        default=request_timeout,
+    )
+    parser.add_argument(
+        "-u",
+        "--url",
+        help="Url for testing the proxies - %(default)s",
+        default=test_proxy_url,
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        metavar="DIR",
+        help="Directory to save the generated contents - %(default)s",
+        default=proxy_dir.as_posix(),
+    )
+    parser.add_argument(
+        "-i",
+        "--indent",
+        metavar="INT",
+        type=int,
+        help="Indentation level for json outputs- %(default)s",
+        default=indentation_level,
+    )
+    parser.add_argument(
+        "-l",
+        "--level",
+        type=int,
+        choices=[10, 20, 30, 40, 50, 51],
+        metavar="10|20|30|40|50|51",
+        help="Logging level",
+        default=20,
+    )
+    parser.add_argument("-f", "--file", metavar="PATH", help="Path to file to log to.")
+    args = parser.parse_args()
+
+    thread_amount = args.threads
+    request_timeout = args.timeout
+    indentation_level = args.level
+
+    proxy_dir = Path(args.output)
+
+    test_proxy_url = args.url
+
+    path_to_proxies: dict[str, Path] = {
+        "http": proxy_dir / "http.json",
+        "socks4": proxy_dir / "socks4.json",
+        "socks5": proxy_dir / "socks5.json",
+        "proxies": proxy_dir / "proxies.json",
+        "random": proxy_dir / "random.json",
+        "metadata": proxy_dir / "metadata.json",
+    }
+
     logging.basicConfig(
         format="%(asctime)s - %(levelname)s : %(message)s",
-        level=logging.INFO,
+        level=args.level,
         datefmt="%d-%b-%Y %H:%M:%S",
+        filename=args.file,
     )
     try:
         main()
