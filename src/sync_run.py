@@ -243,6 +243,14 @@ if __name__ == "__main__":
         default=20,
     )
     parser.add_argument("-f", "--file", metavar="PATH", help="Path to file to log to.")
+    parser.add_argument(
+        "-m",
+        "--mode",
+        metavar="w|a",
+        choices=["w", "a"],
+        default="a",
+        help="Logging file  mode - %(default)s",
+    )
     args = parser.parse_args()
 
     thread_amount = args.threads
@@ -267,6 +275,7 @@ if __name__ == "__main__":
         level=args.level,
         datefmt="%d-%b-%Y %H:%M:%S",
         filename=args.file,
+        filemode=args.mode,
     )
     try:
         main()
