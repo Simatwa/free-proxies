@@ -12,7 +12,7 @@ request_timeout = 5
 
 indentation_level = 4
 
-thread_amount = 110
+thread_amount = 310
 
 proxy_dir = Path(__file__).parents[1] / "files"
 
@@ -87,22 +87,46 @@ def generate_metadata() -> dict[str, dict[str, str]]:
     proxy_metadata: dict[str, dict[str, str]] = {}
     global request_timeout
     request_timeout = 3
+    tasks: list[threading.Thread] = []
+
+    def get_metadata(proxy):
+        proxy = f"{proxy_type}://{proxy}"
+        start_time = time.time()
+        resp = fetch("http://ip-api.com/json", proxies=dict(http=proxy))
+        response_time = time.time() - start_time
+        proxy_info = resp.json()
+        proxy_info["response_time"] = response_time
+        proxy_metadata[proxy] = proxy_info
+        logging.info(
+            f"Metadata Generated for {proxy}  ({proxy_info['country']} - {proxy_info['status']})"
+        )
+
     for proxy_type, proxies in working_proxy_cache.items():
         logging.info(f"Generating metadata for {proxy_type} proxies - {len(proxies)}")
-        for proxy in proxies:
+        for count, proxy in enumerate(proxies, start=1):
             try:
-                proxy = f"{proxy_type}://{proxy}"
-                start_time = time.time()
-                resp = fetch("http://ip-api.com/json", proxies=dict(http=proxy))
-                response_time = time.time() - start_time
-                proxy_info = resp.json()
-                proxy_info["response_time"] = response_time
-                proxy_metadata[proxy] = proxy_info
-                logging.info(
-                    f"Metadata Generated for {proxy}  ({proxy_info['country']} - {proxy_info['status']})"
+                task = threading.Thread(
+                    target=get_metadata,
+                    args=(proxy,),
                 )
+                tasks.append(task)
+                task.start()
+                if count % round(thread_amount / 4) == 0:
+                    logging.info(
+                        f"Waiting for current running {round(thread_amount/2)} threads to complete."
+                    )
+                    for task in tasks:
+                        task.join()
+                    tasks.clear()
+
             except Exception as e:
+                if task in tasks:
+                    tasks.remove(task)
+
                 logging.debug(f"Fetching proxy ({proxy}) metadata failed - {e}")
+
+    for task in tasks:
+        task.join()
 
     return proxy_metadata
 
@@ -141,14 +165,19 @@ def save_proxies():
     write(path_to_proxies["metadata"], generate_metadata())
 
     select_random_proxies()
-    write(proxy_dir / "timestamp.json", dict(utc=datetime.datetime.utcnow().__str__()))
+    write(
+        proxy_dir / "timestamp.json",
+        dict(utc=datetime.datetime.now(datetime.timezone.utc).__str__()),
+    )
 
 
 def main():
+    tasks: list[threading.Thread] = []
     for proxy_type, proxies in get_proxies().items():
-        tasks: list[threading.Thread] = []
         for index, proxy in enumerate(proxies, start=1):
             task = threading.Thread(target=test_proxy, args=(proxy_type, proxy))
+            tasks.append(task)
+            task.start()
             if index % thread_amount == 0:
                 logging.warning(
                     f"Waiting currrent running {thread_amount} threads to complete."
@@ -156,9 +185,10 @@ def main():
                 for running_task in tasks:
                     running_task.join()
                 tasks.clear()
-            else:
-                tasks.append(task)
-                task.start()
+
+    for task in tasks:
+        task.join()
+
     save_proxies()
 
 
