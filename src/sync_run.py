@@ -90,16 +90,19 @@ def generate_metadata() -> dict[str, dict[str, str]]:
     tasks: list[threading.Thread] = []
 
     def get_metadata(proxy):
-        proxy = f"{proxy_type}://{proxy}"
-        start_time = time.time()
-        resp = fetch("http://ip-api.com/json", proxies=dict(http=proxy))
-        response_time = time.time() - start_time
-        proxy_info = resp.json()
-        proxy_info["response_time"] = response_time
-        proxy_metadata[proxy] = proxy_info
-        logging.info(
-            f"Metadata Generated for {proxy}  ({proxy_info['country']} - {proxy_info['status']})"
-        )
+        try:
+            proxy = f"{proxy_type}://{proxy}"
+            start_time = time.time()
+            resp = fetch("http://ip-api.com/json", proxies=dict(http=proxy))
+            response_time = time.time() - start_time
+            proxy_info = resp.json()
+            proxy_info["response_time"] = response_time
+            proxy_metadata[proxy] = proxy_info
+            logging.info(
+                f"Metadata Generated for {proxy}  ({proxy_info['country']} - {proxy_info['status']})"
+            )
+        except Exception as e:
+            logging.debug(f"Error while generating metadata - {e}")
 
     for proxy_type, proxies in working_proxy_cache.items():
         logging.info(f"Generating metadata for {proxy_type} proxies - {len(proxies)}")
