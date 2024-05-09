@@ -255,7 +255,7 @@ if __name__ == "__main__":
 
     thread_amount = args.threads
     request_timeout = args.timeout
-    indentation_level = args.level
+    indentation_level = args.indent
 
     proxy_dir = Path(args.output)
 
