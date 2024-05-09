@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import httpx
 import typing
 import logging
