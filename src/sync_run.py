@@ -91,7 +91,7 @@ def generate_metadata() -> dict[str, dict[str, str]]:
             proxy_info["response_time"] = response_time
             proxy_metadata[proxy] = proxy_info
             logging.info(
-                f"Metadata Generated for {proxy}  ({proxy_info['country']} - {proxy_info['status']})"
+                f"Metadata generated for {proxy}  ({proxy_info['country']} - {proxy_info['status']})"
             )
         except Exception as e:
             logging.debug(f"Error while generating metadata - {e}")
@@ -270,12 +270,16 @@ if __name__ == "__main__":
         "metadata": proxy_dir / "metadata.json",
     }
 
+    log_handlers = [logging.StreamHandler()]
+
+    if args.file:
+        log_handlers.append(logging.FileHandler(args.file, args.mode))
+
     logging.basicConfig(
         format="%(asctime)s - %(levelname)s : %(message)s",
         level=args.level,
         datefmt="%d-%b-%Y %H:%M:%S",
-        filename=args.file,
-        filemode=args.mode,
+        handlers=log_handlers,
     )
     try:
         main()
