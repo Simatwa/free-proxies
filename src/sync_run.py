@@ -7,6 +7,7 @@ import json
 import datetime
 import random
 import time
+import os
 from pathlib import Path
 
 __version__ = "0.0.5"
@@ -17,7 +18,7 @@ indentation_level = 4
 
 thread_amount = 310
 
-proxy_dir = Path(__file__).parents[1] / "files"
+proxy_dir = Path(os.getcwd())
 
 test_proxy_url = (
     "https://raw.githubusercontent.com/Simatwa/free-proxies/master/files/test.md"
@@ -253,6 +254,11 @@ if __name__ == "__main__":
         help="Logging file  mode - %(default)s",
     )
     args = parser.parse_args()
+    if not Path(args.output).is_dir():
+        print(f"Path '{args.output}' is not a valid directory.")
+        import sys
+
+        sys.exit(1)
 
     thread_amount = args.threads
     request_timeout = args.timeout
