@@ -14,7 +14,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.50.22",
-        "response_time": 0.038520097732543945
+        "response_time": 0.0536956787109375
     },
     "http://152.26.229.42:9443": {
         "status": "success",
@@ -31,7 +31,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.51.22",
-        "response_time": 0.037223100662231445
+        "response_time": 0.04422593116760254
     },
     "socks4://167.71.241.136:33299": {
         "status": "success",
@@ -48,24 +48,7 @@
         "org": "DigitalOcean, LLC",
         "as": "AS14061 DigitalOcean, LLC",
         "query": "167.71.241.136",
-        "response_time": 0.07021832466125488
-    },
-    "http://199.167.236.12:3128": {
-        "status": "success",
-        "country": "United States",
-        "countryCode": "US",
-        "region": "CA",
-        "regionName": "California",
-        "city": "Pasadena",
-        "zip": "91103",
-        "lat": 34.1648,
-        "lon": -118.1515,
-        "timezone": "America/Los_Angeles",
-        "isp": "GLOBAL IT",
-        "org": "Global IT Communications",
-        "as": "AS16841 GLOBAL IT",
-        "query": "199.167.236.12",
-        "response_time": 0.13602519035339355
+        "response_time": 0.08808088302612305
     },
     "socks5://167.71.241.136:33299": {
         "status": "success",
@@ -82,7 +65,7 @@
         "org": "DigitalOcean, LLC",
         "as": "AS14061 DigitalOcean, LLC",
         "query": "167.71.241.136",
-        "response_time": 0.0553281307220459
+        "response_time": 0.09676861763000488
     },
     "http://35.185.196.38:3128": {
         "status": "success",
@@ -99,41 +82,7 @@
         "org": "Google Cloud (us-west1)",
         "as": "AS15169 Google LLC",
         "query": "104.196.239.209",
-        "response_time": 0.15710186958312988
-    },
-    "http://200.24.131.126:999": {
-        "status": "success",
-        "country": "Ecuador",
-        "countryCode": "EC",
-        "region": "G",
-        "regionName": "Guayas",
-        "city": "Guayaquil",
-        "zip": "",
-        "lat": -2.1978,
-        "lon": -79.8764,
-        "timezone": "America/Guayaquil",
-        "isp": "Negocios Y Telefonia Nedetel S.A",
-        "org": "Vasquez Burgos Livington",
-        "as": "AS52468 UFINET PANAMA S.A.",
-        "query": "200.24.131.125",
-        "response_time": 0.3732128143310547
-    },
-    "socks4://181.115.75.102:5678": {
-        "status": "success",
-        "country": "Honduras",
-        "countryCode": "HN",
-        "region": "CR",
-        "regionName": "Cort\u00e9s Department",
-        "city": "San Pedro Sula",
-        "zip": "",
-        "lat": 15.4967,
-        "lon": -88.0338,
-        "timezone": "America/Tegucigalpa",
-        "isp": "TELECOMUNICACIONES DE GUATEMALA, SOCIEDAD ANONIMA",
-        "org": "SERCOM de Honduras",
-        "as": "AS14754 TELECOMUNICACIONES DE GUATEMALA, SOCIEDAD ANONIMA",
-        "query": "181.115.75.102",
-        "response_time": 0.30080366134643555
+        "response_time": 0.1665651798248291
     },
     "socks4://31.170.22.127:1080": {
         "status": "success",
@@ -150,24 +99,24 @@
         "org": "NANO-ADTECH",
         "as": "AS43513 Sia Nano IT",
         "query": "31.170.22.127",
-        "response_time": 0.47879862785339355
+        "response_time": 0.4203982353210449
     },
-    "socks4://95.170.201.34:43018": {
+    "socks4://72.167.46.207:1080": {
         "status": "success",
-        "country": "Iraq",
-        "countryCode": "IQ",
-        "region": "AR",
-        "regionName": "Erbil",
-        "city": "Erbil",
-        "zip": "",
-        "lat": 36.1828,
-        "lon": 44.0105,
-        "timezone": "Asia/Baghdad",
-        "isp": "Allay Nawroz Telecom Company for Communication/Ltd.",
-        "org": "Newroz Corporate",
-        "as": "AS21277 Allay Nawroz Telecom Company for Communication/Ltd.",
-        "query": "95.170.201.34",
-        "response_time": 0.6378920078277588
+        "country": "United States",
+        "countryCode": "US",
+        "region": "AZ",
+        "regionName": "Arizona",
+        "city": "Tempe",
+        "zip": "85284",
+        "lat": 33.3359,
+        "lon": -111.894,
+        "timezone": "America/Phoenix",
+        "isp": "GoDaddy.com, LLC",
+        "org": "GoDaddy.com, LLC",
+        "as": "AS26496 GoDaddy.com, LLC",
+        "query": "72.167.46.207",
+        "response_time": 0.5196421146392822
     },
     "http://160.86.242.23:8080": {
         "status": "success",
@@ -184,7 +133,7 @@
         "org": "Sony Network Communications Inc.",
         "as": "AS2527 Sony Network Communications Inc.",
         "query": "160.86.242.23",
-        "response_time": 0.704930305480957
+        "response_time": 0.6559765338897705
     },
     "http://152.67.9.179:8100": {
         "status": "success",
@@ -201,24 +150,7 @@
         "org": "Oracle Cloud Infrastructure (ap-mumbai-1)",
         "as": "AS31898 Oracle Corporation",
         "query": "152.67.9.179",
-        "response_time": 0.9155633449554443
-    },
-    "http://20.235.159.154:80": {
-        "status": "success",
-        "country": "India",
-        "countryCode": "IN",
-        "region": "TN",
-        "regionName": "Tamil Nadu",
-        "city": "Chennai",
-        "zip": "600001",
-        "lat": 13.081185,
-        "lon": 80.27178,
-        "timezone": "Asia/Kolkata",
-        "isp": "Microsoft Corporation",
-        "org": "Microsoft Azure Cloud (southindia)",
-        "as": "AS8075 Microsoft Corporation",
-        "query": "20.235.159.154",
-        "response_time": 0.9225842952728271
+        "response_time": 0.9634203910827637
     },
     "socks4://36.92.81.181:4145": {
         "status": "success",
@@ -235,24 +167,92 @@
         "org": "Temporary",
         "as": "AS7713 PT Telekomunikasi Indonesia",
         "query": "36.92.81.181",
-        "response_time": 0.9843311309814453
+        "response_time": 0.9695534706115723
     },
-    "http://189.240.60.164:9090": {
+    "http://116.235.238.47:3128": {
         "status": "success",
-        "country": "Mexico",
-        "countryCode": "MX",
-        "region": "CMX",
-        "regionName": "Mexico City",
-        "city": "Iztacalco",
-        "zip": "08100",
-        "lat": 19.413,
-        "lon": -99.0682,
-        "timezone": "America/Mexico_City",
-        "isp": "Uninet S.A. de C.V.",
-        "org": "UNINET",
-        "as": "AS8151 UNINET",
-        "query": "189.240.60.168",
-        "response_time": 1.2361724376678467
+        "country": "China",
+        "countryCode": "CN",
+        "region": "SH",
+        "regionName": "Shanghai",
+        "city": "Shanghai",
+        "zip": "",
+        "lat": 31.2222,
+        "lon": 121.4581,
+        "timezone": "Asia/Shanghai",
+        "isp": "China Telecom (Group)",
+        "org": "Chinanet SH",
+        "as": "AS4812 China Telecom (Group)",
+        "query": "116.235.238.47",
+        "response_time": 1.3164637088775635
+    },
+    "socks4://86.59.194.184:4145": {
+        "status": "success",
+        "country": "Hungary",
+        "countryCode": "HU",
+        "region": "BU",
+        "regionName": "Budapest",
+        "city": "Budapest",
+        "zip": "1067",
+        "lat": 47.5636,
+        "lon": 19.0947,
+        "timezone": "Europe/Budapest",
+        "isp": "Magyar Telekom",
+        "org": "",
+        "as": "AS5483 Magyar Telekom plc.",
+        "query": "86.59.194.184",
+        "response_time": 1.4435489177703857
+    },
+    "http://172.245.10.132:34567": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "NY",
+        "regionName": "New York",
+        "city": "Buffalo",
+        "zip": "14205",
+        "lat": 42.8856,
+        "lon": -78.8736,
+        "timezone": "America/New_York",
+        "isp": "HostPapa",
+        "org": "",
+        "as": "AS36352 HostPapa",
+        "query": "172.245.10.132",
+        "response_time": 1.876577615737915
+    },
+    "http://172.183.241.1:8080": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "IL",
+        "regionName": "Illinois",
+        "city": "Chicago",
+        "zip": "60602",
+        "lat": 41.8819,
+        "lon": -87.6278,
+        "timezone": "America/Chicago",
+        "isp": "Microsoft",
+        "org": "Microsoft Azure Cloud (northcentralus)",
+        "as": "AS8075 Microsoft Corporation",
+        "query": "172.183.241.1",
+        "response_time": 1.9072892665863037
+    },
+    "socks4://79.7.101.98:5678": {
+        "status": "success",
+        "country": "Italy",
+        "countryCode": "IT",
+        "region": "62",
+        "regionName": "Lazio",
+        "city": "Rome",
+        "zip": "00187",
+        "lat": 41.9618,
+        "lon": 12.4643,
+        "timezone": "Europe/Rome",
+        "isp": "Telecom Italia S.p.A. TIN EASY LITE",
+        "org": "INTERBUSINESS",
+        "as": "AS3269 Telecom Italia S.p.A.",
+        "query": "79.7.101.98",
+        "response_time": 2.113898754119873
     },
     "http://189.240.60.168:9090": {
         "status": "success",
@@ -269,7 +269,24 @@
         "org": "UNINET",
         "as": "AS8151 UNINET",
         "query": "189.240.60.168",
-        "response_time": 1.2575500011444092
+        "response_time": 2.2317774295806885
+    },
+    "http://189.240.60.171:9090": {
+        "status": "success",
+        "country": "Mexico",
+        "countryCode": "MX",
+        "region": "CMX",
+        "regionName": "Mexico City",
+        "city": "Iztacalco",
+        "zip": "08100",
+        "lat": 19.413,
+        "lon": -99.0682,
+        "timezone": "America/Mexico_City",
+        "isp": "Uninet S.A. de C.V.",
+        "org": "UNINET",
+        "as": "AS8151 UNINET",
+        "query": "189.240.60.168",
+        "response_time": 2.2164087295532227
     },
     "http://189.240.60.169:9090": {
         "status": "success",
@@ -286,9 +303,9 @@
         "org": "UNINET",
         "as": "AS8151 UNINET",
         "query": "189.240.60.168",
-        "response_time": 1.2383427619934082
+        "response_time": 2.2575433254241943
     },
-    "http://189.240.60.166:9090": {
+    "http://189.240.60.163:9090": {
         "status": "success",
         "country": "Mexico",
         "countryCode": "MX",
@@ -303,9 +320,9 @@
         "org": "UNINET",
         "as": "AS8151 UNINET",
         "query": "189.240.60.168",
-        "response_time": 1.2860026359558105
+        "response_time": 2.241929531097412
     },
-    "http://161.34.40.32:3128": {
+    "http://161.34.40.109:3128": {
         "status": "success",
         "country": "Japan",
         "countryCode": "JP",
@@ -319,25 +336,59 @@
         "isp": "NTT PC Communications, Inc.",
         "org": "NTTPC Communications, Inc",
         "as": "AS2514 NTT PC Communications, Inc.",
-        "query": "161.34.40.32",
-        "response_time": 1.7594070434570312
+        "query": "161.34.40.109",
+        "response_time": 2.694715738296509
     },
-    "socks5://51.75.125.208:11977": {
+    "http://161.34.39.163:3128": {
         "status": "success",
-        "country": "France",
-        "countryCode": "FR",
-        "region": "HDF",
-        "regionName": "Hauts-de-France",
-        "city": "Gravelines",
-        "zip": "59820",
-        "lat": 50.9871,
-        "lon": 2.12554,
-        "timezone": "Europe/Paris",
-        "isp": "OVH SAS",
-        "org": "OVH",
-        "as": "AS16276 OVH SAS",
-        "query": "51.75.125.208",
-        "response_time": 2.4410207271575928
+        "country": "Japan",
+        "countryCode": "JP",
+        "region": "12",
+        "regionName": "Chiba",
+        "city": "Higashifunabashi",
+        "zip": "273-0001",
+        "lat": 35.7074,
+        "lon": 139.9955,
+        "timezone": "Asia/Tokyo",
+        "isp": "NTT PC Communications, Inc.",
+        "org": "NTTPC Communications, Inc",
+        "as": "AS2514 NTT PC Communications, Inc.",
+        "query": "161.34.39.163",
+        "response_time": 2.7787985801696777
+    },
+    "http://200.24.131.126:999": {
+        "status": "success",
+        "country": "Ecuador",
+        "countryCode": "EC",
+        "region": "G",
+        "regionName": "Guayas",
+        "city": "Guayaquil",
+        "zip": "",
+        "lat": -2.1978,
+        "lon": -79.8764,
+        "timezone": "America/Guayaquil",
+        "isp": "Negocios Y Telefonia Nedetel S.A",
+        "org": "Vasquez Burgos Livington",
+        "as": "AS52468 UFINET PANAMA S.A.",
+        "query": "200.24.131.125",
+        "response_time": 3.0424106121063232
+    },
+    "http://161.34.40.115:3128": {
+        "status": "success",
+        "country": "Japan",
+        "countryCode": "JP",
+        "region": "12",
+        "regionName": "Chiba",
+        "city": "Higashifunabashi",
+        "zip": "273-0001",
+        "lat": 35.7074,
+        "lon": 139.9955,
+        "timezone": "Asia/Tokyo",
+        "isp": "NTT PC Communications, Inc.",
+        "org": "NTTPC Communications, Inc",
+        "as": "AS2514 NTT PC Communications, Inc.",
+        "query": "161.34.40.115",
+        "response_time": 3.263533592224121
     },
     "socks5://51.89.173.40:21276": {
         "status": "success",
@@ -354,57 +405,6 @@
         "org": "OVH Ltd",
         "as": "AS16276 OVH SAS",
         "query": "51.89.173.40",
-        "response_time": 2.931189775466919
-    },
-    "http://121.151.223.163:1337": {
-        "status": "success",
-        "country": "South Korea",
-        "countryCode": "KR",
-        "region": "47",
-        "regionName": "Gyeongsangbuk-do",
-        "city": "Mungyeong",
-        "zip": "369",
-        "lat": 36.5935,
-        "lon": 128.2116,
-        "timezone": "Asia/Seoul",
-        "isp": "Korea Telecom",
-        "org": "Kornet",
-        "as": "AS4766 Korea Telecom",
-        "query": "121.151.223.163",
-        "response_time": 3.1054625511169434
-    },
-    "socks4://154.16.112.203:51892": {
-        "status": "success",
-        "country": "United States",
-        "countryCode": "US",
-        "region": "NY",
-        "regionName": "New York",
-        "city": "Buffalo",
-        "zip": "14205",
-        "lat": 42.8856,
-        "lon": -78.8736,
-        "timezone": "America/New_York",
-        "isp": "ipxo",
-        "org": "OC1-HostForWeb, LLC",
-        "as": "AS14670 WHG Hosting Services Ltd",
-        "query": "154.16.112.203",
-        "response_time": 3.4430298805236816
-    },
-    "socks4://103.92.235.60:26471": {
-        "status": "success",
-        "country": "India",
-        "countryCode": "IN",
-        "region": "KA",
-        "regionName": "Karnataka",
-        "city": "Bengaluru",
-        "zip": "560056",
-        "lat": 13.021,
-        "lon": 77.6792,
-        "timezone": "Asia/Kolkata",
-        "isp": "Ovi Hosting Pvt Ltd",
-        "org": "Ovi Hosting Pvt Ltd",
-        "as": "AS135822 Ovi Hosting Pvt Ltd",
-        "query": "103.92.235.60",
-        "response_time": 4.384383916854858
+        "response_time": 3.3928301334381104
     }
 }
