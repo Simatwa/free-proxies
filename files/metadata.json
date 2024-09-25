@@ -14,24 +14,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.116.28",
-        "response_time": 0.05288863182067871
-    },
-    "http://152.26.229.34:9443": {
-        "status": "success",
-        "country": "United States",
-        "countryCode": "US",
-        "region": "NC",
-        "regionName": "North Carolina",
-        "city": "Durham",
-        "zip": "27707",
-        "lat": 35.961,
-        "lon": -78.9291,
-        "timezone": "America/New_York",
-        "isp": "MCNC",
-        "org": "MCNC",
-        "as": "AS81 MCNC",
-        "query": "152.22.49.27",
-        "response_time": 0.0577392578125
+        "response_time": 0.0501406192779541
     },
     "http://152.26.231.94:9443": {
         "status": "success",
@@ -48,24 +31,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.112.24",
-        "response_time": 0.0636899471282959
-    },
-    "http://152.26.231.42:9443": {
-        "status": "success",
-        "country": "United States",
-        "countryCode": "US",
-        "region": "NC",
-        "regionName": "North Carolina",
-        "city": "Winston-Salem",
-        "zip": "27106",
-        "lat": 36.1803,
-        "lon": -80.2813,
-        "timezone": "America/New_York",
-        "isp": "MCNC",
-        "org": "MCNC",
-        "as": "AS81 MCNC",
-        "query": "152.22.117.27",
-        "response_time": 0.06509041786193848
+        "response_time": 0.06546330451965332
     },
     "http://152.26.229.47:9443": {
         "status": "success",
@@ -82,7 +48,41 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.48.25",
-        "response_time": 0.07244682312011719
+        "response_time": 0.06987261772155762
+    },
+    "http://152.26.231.42:9443": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "NC",
+        "regionName": "North Carolina",
+        "city": "Winston-Salem",
+        "zip": "27106",
+        "lat": 36.1803,
+        "lon": -80.2813,
+        "timezone": "America/New_York",
+        "isp": "MCNC",
+        "org": "MCNC",
+        "as": "AS81 MCNC",
+        "query": "152.22.117.27",
+        "response_time": 0.0839545726776123
+    },
+    "http://152.26.229.34:9443": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "NC",
+        "regionName": "North Carolina",
+        "city": "Durham",
+        "zip": "27707",
+        "lat": 35.961,
+        "lon": -78.9291,
+        "timezone": "America/New_York",
+        "isp": "MCNC",
+        "org": "MCNC",
+        "as": "AS81 MCNC",
+        "query": "152.22.49.27",
+        "response_time": 0.08708596229553223
     },
     "http://152.26.229.42:9443": {
         "status": "success",
@@ -99,41 +99,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.51.22",
-        "response_time": 0.056212425231933594
-    },
-    "http://160.86.242.23:8080": {
-        "status": "success",
-        "country": "Japan",
-        "countryCode": "JP",
-        "region": "27",
-        "regionName": "Osaka",
-        "city": "Osaka",
-        "zip": "541-0051",
-        "lat": 34.6823,
-        "lon": 135.5105,
-        "timezone": "Asia/Tokyo",
-        "isp": "Sony Network Communications Inc",
-        "org": "Sony Network Communications Inc.",
-        "as": "AS2527 Sony Network Communications Inc.",
-        "query": "160.86.242.23",
-        "response_time": 0.6914582252502441
-    },
-    "http://115.127.112.76:8090": {
-        "status": "success",
-        "country": "Bangladesh",
-        "countryCode": "BD",
-        "region": "H",
-        "regionName": "Mymensingh Division",
-        "city": "Mymensingh",
-        "zip": "2200",
-        "lat": 24.7189,
-        "lon": 90.6462,
-        "timezone": "Asia/Dhaka",
-        "isp": "BRACNet Limited",
-        "org": "BRACNet Limited",
-        "as": "AS24342 BRACNet Limited",
-        "query": "115.127.112.76",
-        "response_time": 2.9433820247650146
+        "response_time": 0.07775068283081055
     },
     "http://152.26.229.86:9443": {
         "status": "success",
@@ -150,7 +116,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.50.22",
-        "response_time": 0.05359339714050293
+        "response_time": 0.050476789474487305
     },
     "http://152.26.229.46:9443": {
         "status": "success",
@@ -167,7 +133,41 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.53.27",
-        "response_time": 0.061913490295410156
+        "response_time": 0.04919767379760742
+    },
+    "http://20.228.211.117:3128": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "VA",
+        "regionName": "Virginia",
+        "city": "Boydton",
+        "zip": "23917",
+        "lat": 36.677696,
+        "lon": -78.37471,
+        "timezone": "America/New_York",
+        "isp": "Microsoft Corporation",
+        "org": "Microsoft Azure Cloud (eastus)",
+        "as": "AS8075 Microsoft Corporation",
+        "query": "20.228.211.117",
+        "response_time": 0.343977689743042
+    },
+    "socks4://172.233.254.134:1080": {
+        "status": "success",
+        "country": "France",
+        "countryCode": "FR",
+        "region": "IDF",
+        "regionName": "\u00cele-de-France",
+        "city": "Paris",
+        "zip": "75001",
+        "lat": 48.8323,
+        "lon": 2.4075,
+        "timezone": "Europe/Paris",
+        "isp": "Akamai Technologies, Inc.",
+        "org": "Akamai Technologies, Inc.",
+        "as": "AS63949 Akamai Connected Cloud",
+        "query": "172.233.254.134",
+        "response_time": 0.2899198532104492
     },
     "socks4://31.170.22.127:1080": {
         "status": "success",
@@ -184,24 +184,24 @@
         "org": "NANO-ADTECH",
         "as": "AS43513 Sia Nano IT",
         "query": "31.170.22.127",
-        "response_time": 0.41062068939208984
+        "response_time": 0.40293097496032715
     },
-    "socks4://82.157.172.60:1080": {
+    "socks4://27.71.45.94:5678": {
         "status": "success",
-        "country": "China",
-        "countryCode": "CN",
-        "region": "BJ",
-        "regionName": "Beijing",
-        "city": "Beijing",
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "HN",
+        "regionName": "Hanoi",
+        "city": "Hanoi",
         "zip": "",
-        "lat": 39.911,
-        "lon": 116.395,
-        "timezone": "Asia/Shanghai",
-        "isp": "Shenzhen Tencent Computer Systems Company Limited",
-        "org": "Tencent Cloud Computing (Beijing) Co., Ltd",
-        "as": "AS45090 Shenzhen Tencent Computer Systems Company Limited",
-        "query": "82.157.172.60",
-        "response_time": 1.4525542259216309
+        "lat": 21.0292,
+        "lon": 105.8526,
+        "timezone": "Asia/Bangkok",
+        "isp": "Viettel Group",
+        "org": "VIETTEL",
+        "as": "AS7552 Viettel Group",
+        "query": "27.71.45.94",
+        "response_time": 1.0939958095550537
     },
     "http://64.92.82.59:8080": {
         "status": "success",
@@ -218,40 +218,57 @@
         "org": "Globe Telecom",
         "as": "AS4775 Globe Telecoms",
         "query": "120.28.33.170",
-        "response_time": 2.059004068374634
+        "response_time": 1.293335199356079
     },
-    "socks4://199.204.248.154:51237": {
+    "http://43.134.68.153:3128": {
         "status": "success",
-        "country": "United States",
-        "countryCode": "US",
-        "region": "NY",
-        "regionName": "New York",
-        "city": "Buffalo",
-        "zip": "14202",
-        "lat": 42.893,
-        "lon": -78.8753,
-        "timezone": "America/New_York",
-        "isp": "HostPapa",
-        "org": "HostPapa",
-        "as": "AS11989 HostPapa",
-        "query": "199.204.248.124",
-        "response_time": 3.072972536087036
+        "country": "Singapore",
+        "countryCode": "SG",
+        "region": "03",
+        "regionName": "North West",
+        "city": "Singapore",
+        "zip": "858877",
+        "lat": 1.352,
+        "lon": 103.8198,
+        "timezone": "Asia/Singapore",
+        "isp": "Shenzhen Tencent Computer Systems Company Limited",
+        "org": "Tencent Cloud Computing",
+        "as": "AS132203 Tencent Building, Kejizhongyi Avenue",
+        "query": "43.134.68.153",
+        "response_time": 1.8937609195709229
     },
-    "http://190.121.145.115:999": {
+    "http://173.249.60.246:14344": {
         "status": "success",
-        "country": "Colombia",
-        "countryCode": "CO",
-        "region": "BOY",
-        "regionName": "Departamento de Boyac\u00e1",
-        "city": "Sogamoso",
-        "zip": "152211",
-        "lat": 5.7147,
-        "lon": -72.9278,
-        "timezone": "America/Bogota",
-        "isp": "Media Commerce Partners S.A",
-        "org": "Intersystem Ingenieria",
-        "as": "AS27951 Media Commerce Partners S.A",
-        "query": "190.121.145.115",
-        "response_time": 4.361335039138794
+        "country": "Germany",
+        "countryCode": "DE",
+        "region": "BY",
+        "regionName": "Bavaria",
+        "city": "Nuremberg",
+        "zip": "90475",
+        "lat": 49.405,
+        "lon": 11.1617,
+        "timezone": "Europe/Berlin",
+        "isp": "Contabo GmbH",
+        "org": "Contabo GmbH",
+        "as": "AS51167 Contabo GmbH",
+        "query": "173.249.60.246",
+        "response_time": 3.7502448558807373
+    },
+    "http://14.226.7.148:8080": {
+        "status": "success",
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "HN",
+        "regionName": "Hanoi",
+        "city": "Hanoi",
+        "zip": "",
+        "lat": 21.0292,
+        "lon": 105.8526,
+        "timezone": "Asia/Bangkok",
+        "isp": "VNPT",
+        "org": "Vietnam Posts and Telecommunications Group",
+        "as": "AS45899 VNPT Corp",
+        "query": "14.226.7.148",
+        "response_time": 5.0569844245910645
     }
 }
