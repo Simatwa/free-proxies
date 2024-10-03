@@ -14,7 +14,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.116.28",
-        "response_time": 0.05768299102783203
+        "response_time": 0.054329633712768555
     },
     "http://152.26.229.47:9443": {
         "status": "success",
@@ -31,7 +31,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.48.25",
-        "response_time": 0.052908897399902344
+        "response_time": 0.05525326728820801
     },
     "http://152.26.229.34:9443": {
         "status": "success",
@@ -48,24 +48,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.49.27",
-        "response_time": 0.05217766761779785
-    },
-    "http://152.26.231.94:9443": {
-        "status": "success",
-        "country": "United States",
-        "countryCode": "US",
-        "region": "NC",
-        "regionName": "North Carolina",
-        "city": "Winston-Salem",
-        "zip": "27106",
-        "lat": 36.1803,
-        "lon": -80.2813,
-        "timezone": "America/New_York",
-        "isp": "MCNC",
-        "org": "MCNC",
-        "as": "AS81 MCNC",
-        "query": "152.22.112.24",
-        "response_time": 0.05574512481689453
+        "response_time": 0.06020331382751465
     },
     "http://152.26.229.86:9443": {
         "status": "success",
@@ -82,7 +65,24 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.50.22",
-        "response_time": 0.05441021919250488
+        "response_time": 0.054276466369628906
+    },
+    "http://152.26.231.94:9443": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "NC",
+        "regionName": "North Carolina",
+        "city": "Winston-Salem",
+        "zip": "27106",
+        "lat": 36.1803,
+        "lon": -80.2813,
+        "timezone": "America/New_York",
+        "isp": "MCNC",
+        "org": "MCNC",
+        "as": "AS81 MCNC",
+        "query": "152.22.112.24",
+        "response_time": 0.0663604736328125
     },
     "http://152.26.229.42:9443": {
         "status": "success",
@@ -99,7 +99,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.51.22",
-        "response_time": 0.06035900115966797
+        "response_time": 0.06369686126708984
     },
     "http://152.26.231.42:9443": {
         "status": "success",
@@ -116,7 +116,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.117.27",
-        "response_time": 0.054099082946777344
+        "response_time": 0.057959794998168945
     },
     "http://152.26.229.46:9443": {
         "status": "success",
@@ -133,24 +133,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.53.27",
-        "response_time": 0.07186317443847656
-    },
-    "http://20.26.249.29:8080": {
-        "status": "success",
-        "country": "United Kingdom",
-        "countryCode": "GB",
-        "region": "ENG",
-        "regionName": "England",
-        "city": "City of London",
-        "zip": "EC3R 7LP",
-        "lat": 51.5113,
-        "lon": -0.079212,
-        "timezone": "Europe/London",
-        "isp": "Microsoft Corporation",
-        "org": "Microsoft Azure Cloud (uksouth)",
-        "as": "AS8075 Microsoft Corporation",
-        "query": "85.210.137.117",
-        "response_time": 0.18372249603271484
+        "response_time": 0.05351567268371582
     },
     "http://5.189.239.157:80": {
         "status": "success",
@@ -167,24 +150,24 @@
         "org": "",
         "as": "AS49505 JSC Selectel",
         "query": "5.189.239.157",
-        "response_time": 0.31381750106811523
+        "response_time": 0.31948304176330566
     },
-    "socks4://107.167.5.186:1080": {
+    "socks4://95.67.72.138:1080": {
         "status": "success",
-        "country": "United States",
-        "countryCode": "US",
-        "region": "CA",
-        "regionName": "California",
-        "city": "Los Angeles",
-        "zip": "90017",
-        "lat": 34.0515,
-        "lon": -118.2707,
-        "timezone": "America/Los_Angeles",
-        "isp": "Sharktech",
-        "org": "Sharktech",
-        "as": "AS46844 Sharktech",
-        "query": "107.167.5.186",
-        "response_time": 0.24138927459716797
+        "country": "Ukraine",
+        "countryCode": "UA",
+        "region": "30",
+        "regionName": "Kyiv City",
+        "city": "Kyiv",
+        "zip": "03035",
+        "lat": 50.458,
+        "lon": 30.5303,
+        "timezone": "Europe/Kyiv",
+        "isp": "Cosmonova",
+        "org": "",
+        "as": "AS34867 Cosmonova LLC",
+        "query": "95.67.72.138",
+        "response_time": 0.5093936920166016
     },
     "socks4://31.170.22.127:1080": {
         "status": "success",
@@ -201,7 +184,7 @@
         "org": "NANO-ADTECH",
         "as": "AS43513 Sia Nano IT",
         "query": "31.170.22.127",
-        "response_time": 0.40417909622192383
+        "response_time": 0.46848630905151367
     },
     "http://160.86.242.23:8080": {
         "status": "success",
@@ -218,7 +201,109 @@
         "org": "Sony Network Communications Inc.",
         "as": "AS2527 Sony Network Communications Inc.",
         "query": "160.86.242.23",
-        "response_time": 0.7727720737457275
+        "response_time": 0.6709918975830078
+    },
+    "http://43.153.207.93:3128": {
+        "status": "success",
+        "country": "Singapore",
+        "countryCode": "SG",
+        "region": "03",
+        "regionName": "North West",
+        "city": "Singapore",
+        "zip": "858877",
+        "lat": 1.352,
+        "lon": 103.8198,
+        "timezone": "Asia/Singapore",
+        "isp": "Aceville Pte.ltd",
+        "org": "",
+        "as": "AS132203 Tencent Building, Kejizhongyi Avenue",
+        "query": "43.153.207.93",
+        "response_time": 0.6573688983917236
+    },
+    "socks4://64.176.15.86:1080": {
+        "status": "success",
+        "country": "Chile",
+        "countryCode": "CL",
+        "region": "RM",
+        "regionName": "Santiago Metropolitan",
+        "city": "Santiago",
+        "zip": "34033",
+        "lat": -33.4521,
+        "lon": -70.6536,
+        "timezone": "America/Santiago",
+        "isp": "The Constant Company, LLC",
+        "org": "The Constant Company, LLC",
+        "as": "AS20473 The Constant Company, LLC",
+        "query": "64.176.15.86",
+        "response_time": 0.619988203048706
+    },
+    "http://43.134.229.98:3128": {
+        "status": "success",
+        "country": "Singapore",
+        "countryCode": "SG",
+        "region": "01",
+        "regionName": "Central Singapore",
+        "city": "Singapore",
+        "zip": "048616",
+        "lat": 1.28423,
+        "lon": 103.852,
+        "timezone": "Asia/Singapore",
+        "isp": "Aceville Pte.ltd",
+        "org": "",
+        "as": "AS132203 Tencent Building, Kejizhongyi Avenue",
+        "query": "43.134.229.98",
+        "response_time": 0.7236583232879639
+    },
+    "http://148.72.140.24:30101": {
+        "status": "success",
+        "country": "Argentina",
+        "countryCode": "AR",
+        "region": "B",
+        "regionName": "Buenos Aires",
+        "city": "Buenos Aires",
+        "zip": "1772",
+        "lat": -36,
+        "lon": -59.9964,
+        "timezone": "America/Argentina/Buenos_Aires",
+        "isp": "Latitude.sh",
+        "org": "Latitude.sh",
+        "as": "AS396356 Latitude.sh",
+        "query": "103.50.33.186",
+        "response_time": 0.9103908538818359
+    },
+    "socks5://64.176.15.86:1080": {
+        "status": "success",
+        "country": "Chile",
+        "countryCode": "CL",
+        "region": "RM",
+        "regionName": "Santiago Metropolitan",
+        "city": "Santiago",
+        "zip": "34033",
+        "lat": -33.4521,
+        "lon": -70.6536,
+        "timezone": "America/Santiago",
+        "isp": "The Constant Company, LLC",
+        "org": "The Constant Company, LLC",
+        "as": "AS20473 The Constant Company, LLC",
+        "query": "64.176.15.86",
+        "response_time": 0.7745938301086426
+    },
+    "socks4://103.224.48.38:31433": {
+        "status": "success",
+        "country": "India",
+        "countryCode": "IN",
+        "region": "UP",
+        "regionName": "Uttar Pradesh",
+        "city": "Kanpur",
+        "zip": "208024",
+        "lat": 26.4969,
+        "lon": 80.3246,
+        "timezone": "Asia/Kolkata",
+        "isp": "R TECHNOLOGIES",
+        "org": "Renu Softtech Sales and Services",
+        "as": "AS134922 R G TECHNOSOLUTIONS PVT LTD",
+        "query": "103.224.48.38",
+        "response_time": 1.0856361389160156
     },
     "http://147.75.34.93:9443": {
         "status": "success",
@@ -235,7 +320,7 @@
         "org": "",
         "as": "AS54825 Packet Host, Inc.",
         "query": "147.75.34.93",
-        "response_time": 1.1013171672821045
+        "response_time": 1.2265911102294922
     },
     "http://147.75.34.93:9401": {
         "status": "success",
@@ -252,7 +337,41 @@
         "org": "",
         "as": "AS54825 Packet Host, Inc.",
         "query": "147.75.34.93",
-        "response_time": 1.1102252006530762
+        "response_time": 1.2285313606262207
+    },
+    "http://4.155.2.13:9401": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "WA",
+        "regionName": "Washington",
+        "city": "Quincy",
+        "zip": "98848",
+        "lat": 47.233,
+        "lon": -119.852,
+        "timezone": "America/Los_Angeles",
+        "isp": "Microsoft Corporation",
+        "org": "Microsoft Azure Cloud (westus2)",
+        "as": "AS8075 Microsoft Corporation",
+        "query": "4.155.2.13",
+        "response_time": 1.177905797958374
+    },
+    "socks4://103.221.254.59:1088": {
+        "status": "success",
+        "country": "Bangladesh",
+        "countryCode": "BD",
+        "region": "C",
+        "regionName": "Dhaka Division",
+        "city": "Dhaka",
+        "zip": "1000",
+        "lat": 23.7272,
+        "lon": 90.4093,
+        "timezone": "Asia/Dhaka",
+        "isp": "Dhaka University",
+        "org": "university of dhaka",
+        "as": "AS135524 university of dhaka",
+        "query": "103.221.254.59",
+        "response_time": 1.1399455070495605
     },
     "http://147.75.34.93:80": {
         "status": "success",
@@ -269,41 +388,7 @@
         "org": "",
         "as": "AS54825 Packet Host, Inc.",
         "query": "147.75.34.93",
-        "response_time": 1.1126930713653564
-    },
-    "http://5.161.114.204:4228": {
-        "status": "success",
-        "country": "United States",
-        "countryCode": "US",
-        "region": "VA",
-        "regionName": "Virginia",
-        "city": "Ashburn",
-        "zip": "20149",
-        "lat": 39.0469,
-        "lon": -77.4903,
-        "timezone": "America/New_York",
-        "isp": "Hetzner Online GmbH",
-        "org": "Hetzner Online GmbH",
-        "as": "AS213230 Hetzner Online GmbH",
-        "query": "5.161.114.204",
-        "response_time": 1.1538968086242676
-    },
-    "http://147.75.34.93:9400": {
-        "status": "success",
-        "country": "The Netherlands",
-        "countryCode": "NL",
-        "region": "NH",
-        "regionName": "North Holland",
-        "city": "Amsterdam",
-        "zip": "1012",
-        "lat": 52.3759,
-        "lon": 4.8975,
-        "timezone": "Europe/Amsterdam",
-        "isp": "Packet Host, Inc.",
-        "org": "",
-        "as": "AS54825 Packet Host, Inc.",
-        "query": "147.75.34.93",
-        "response_time": 1.1536271572113037
+        "response_time": 1.2351562976837158
     },
     "http://147.75.34.93:9480": {
         "status": "success",
@@ -320,26 +405,43 @@
         "org": "",
         "as": "AS54825 Packet Host, Inc.",
         "query": "147.75.34.93",
-        "response_time": 1.1633429527282715
+        "response_time": 1.2398154735565186
     },
-    "http://61.129.2.212:8080": {
+    "http://147.75.34.93:9400": {
         "status": "success",
-        "country": "China",
-        "countryCode": "CN",
-        "region": "BJ",
-        "regionName": "Beijing",
-        "city": "Beijing",
-        "zip": "100000",
-        "lat": 39.9042,
-        "lon": 116.407,
-        "timezone": "Asia/Shanghai",
-        "isp": "CHINANET",
+        "country": "The Netherlands",
+        "countryCode": "NL",
+        "region": "NH",
+        "regionName": "North Holland",
+        "city": "Amsterdam",
+        "zip": "1012",
+        "lat": 52.3759,
+        "lon": 4.8975,
+        "timezone": "Europe/Amsterdam",
+        "isp": "Packet Host, Inc.",
         "org": "",
-        "as": "AS4812 China Telecom (Group)",
-        "query": "61.129.2.212",
-        "response_time": 1.327709436416626
+        "as": "AS54825 Packet Host, Inc.",
+        "query": "147.75.34.93",
+        "response_time": 1.2541401386260986
     },
-    "socks5://23.95.216.78:34561": {
+    "socks4://47.88.104.193:6820": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "CA",
+        "regionName": "California",
+        "city": "Minkler",
+        "zip": "",
+        "lat": 36.7783,
+        "lon": -119.418,
+        "timezone": "America/Los_Angeles",
+        "isp": "Alibaba.com LLC",
+        "org": "ALICLOUD-US",
+        "as": "AS45102 Alibaba (US) Technology Co., Ltd.",
+        "query": "47.88.104.193",
+        "response_time": 1.2057163715362549
+    },
+    "http://23.95.216.78:34561": {
         "status": "success",
         "country": "United States",
         "countryCode": "US",
@@ -354,7 +456,58 @@
         "org": "RackNerd LLC",
         "as": "AS36352 HostPapa",
         "query": "23.95.216.78",
-        "response_time": 1.5357136726379395
+        "response_time": 1.744382619857788
+    },
+    "socks4://107.167.5.186:1080": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "CA",
+        "regionName": "California",
+        "city": "Los Angeles",
+        "zip": "90017",
+        "lat": 34.0515,
+        "lon": -118.2707,
+        "timezone": "America/Los_Angeles",
+        "isp": "Sharktech",
+        "org": "Sharktech",
+        "as": "AS46844 Sharktech",
+        "query": "107.167.5.186",
+        "response_time": 1.7137882709503174
+    },
+    "socks4://83.218.186.22:5678": {
+        "status": "success",
+        "country": "Austria",
+        "countryCode": "AT",
+        "region": "9",
+        "regionName": "Vienna",
+        "city": "Vienna",
+        "zip": "1060",
+        "lat": 48.1945,
+        "lon": 16.3502,
+        "timezone": "Europe/Vienna",
+        "isp": "myNet GmbH",
+        "org": "myNET Internet Solutions",
+        "as": "AS31543 myNet GmbH",
+        "query": "83.218.186.22",
+        "response_time": 1.8153152465820312
+    },
+    "http://5.161.114.204:4228": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "VA",
+        "regionName": "Virginia",
+        "city": "Ashburn",
+        "zip": "20149",
+        "lat": 39.0469,
+        "lon": -77.4903,
+        "timezone": "America/New_York",
+        "isp": "Hetzner Online GmbH",
+        "org": "Hetzner Online GmbH",
+        "as": "AS213230 Hetzner Online GmbH",
+        "query": "5.161.114.204",
+        "response_time": 2.3163912296295166
     },
     "http://4.158.55.159:8080": {
         "status": "success",
@@ -371,24 +524,24 @@
         "org": "Microsoft Azure Cloud (uksouth)",
         "as": "AS8075 Microsoft Corporation",
         "query": "4.250.53.91",
-        "response_time": 1.7690234184265137
+        "response_time": 2.4583661556243896
     },
-    "socks5://51.222.241.8:42504": {
+    "http://85.210.84.11:8080": {
         "status": "success",
-        "country": "Canada",
-        "countryCode": "CA",
-        "region": "QC",
-        "regionName": "Quebec",
-        "city": "Montreal",
-        "zip": "H4X",
-        "lat": 45.5029,
-        "lon": -73.5723,
-        "timezone": "America/Toronto",
-        "isp": "OVH SAS",
-        "org": "OVH Hosting, Inc",
-        "as": "AS16276 OVH SAS",
-        "query": "51.222.241.8",
-        "response_time": 1.7624423503875732
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "region": "ENG",
+        "regionName": "England",
+        "city": "City of London",
+        "zip": "EC3R 7LP",
+        "lat": 51.5113,
+        "lon": -0.079212,
+        "timezone": "Europe/London",
+        "isp": "Microsoft Corporation",
+        "org": "Microsoft Azure Cloud (uksouth)",
+        "as": "AS8075 Microsoft Corporation",
+        "query": "85.210.39.124",
+        "response_time": 2.660928726196289
     },
     "http://111.1.61.47:3128": {
         "status": "success",
@@ -405,57 +558,57 @@
         "org": "China Mobile",
         "as": "AS56041 China Mobile communications corporation",
         "query": "111.1.61.47",
-        "response_time": 2.114222526550293
+        "response_time": 2.9133529663085938
     },
-    "http://116.80.60.140:3128": {
-        "status": "success",
-        "country": "Japan",
-        "countryCode": "JP",
-        "region": "13",
-        "regionName": "Tokyo",
-        "city": "Tokyo",
-        "zip": "151-0071",
-        "lat": 35.6837,
-        "lon": 139.6805,
-        "timezone": "Asia/Tokyo",
-        "isp": "InfoSphere",
-        "org": "NTTPC Communications, Inc",
-        "as": "AS2514 NTT PC Communications, Inc.",
-        "query": "116.80.60.140",
-        "response_time": 2.7686238288879395
-    },
-    "http://203.104.34.144:3128": {
-        "status": "success",
-        "country": "China",
-        "countryCode": "CN",
-        "region": "GD",
-        "regionName": "Guangdong",
-        "city": "Guangzhou",
-        "zip": "510000",
-        "lat": 23.1317,
-        "lon": 113.266,
-        "timezone": "Asia/Shanghai",
-        "isp": "Fuzhou",
-        "org": "Chinanet GD",
-        "as": "AS133774 Fuzhou",
-        "query": "203.104.34.144",
-        "response_time": 3.0555357933044434
-    },
-    "socks5://135.125.132.136:52627": {
+    "socks5://163.172.144.96:16379": {
         "status": "success",
         "country": "Germany",
         "countryCode": "DE",
-        "region": "HE",
-        "regionName": "Hesse",
-        "city": "Limburg an der Lahn",
-        "zip": "65550",
-        "lat": 50.3986,
-        "lon": 8.07958,
+        "region": "BY",
+        "regionName": "Bavaria",
+        "city": "Ha\u00dffurt",
+        "zip": "97437",
+        "lat": 50.0263,
+        "lon": 10.5157,
         "timezone": "Europe/Berlin",
-        "isp": "OVH SAS",
-        "org": "OVH GmbH",
-        "as": "AS16276 OVH SAS",
-        "query": "135.125.132.136",
-        "response_time": 3.93422794342041
+        "isp": "F3 Netze e.V.",
+        "org": "F3 Netze e.V",
+        "as": "AS205100 F3 Netze e.V.",
+        "query": "185.220.100.252",
+        "response_time": 3.86588978767395
+    },
+    "socks4://157.10.7.84:1080": {
+        "status": "success",
+        "country": "Pakistan",
+        "countryCode": "PK",
+        "region": "PB",
+        "regionName": "Punjab",
+        "city": "Lahore",
+        "zip": "54000",
+        "lat": 31.5826,
+        "lon": 74.3276,
+        "timezone": "Asia/Karachi",
+        "isp": "Blue Bird Networks",
+        "org": "Ptcl",
+        "as": "AS138467 Blue Bird Networks",
+        "query": "157.10.7.84",
+        "response_time": 4.044921398162842
+    },
+    "http://43.153.208.148:3128": {
+        "status": "success",
+        "country": "Singapore",
+        "countryCode": "SG",
+        "region": "03",
+        "regionName": "North West",
+        "city": "Singapore",
+        "zip": "858877",
+        "lat": 1.352,
+        "lon": 103.8198,
+        "timezone": "Asia/Singapore",
+        "isp": "Aceville Pte.ltd",
+        "org": "",
+        "as": "AS132203 Tencent Building, Kejizhongyi Avenue",
+        "query": "43.153.208.148",
+        "response_time": 4.541934251785278
     }
 }
