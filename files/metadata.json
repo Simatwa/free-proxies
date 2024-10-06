@@ -1,21 +1,4 @@
 {
-    "http://152.26.231.42:9443": {
-        "status": "success",
-        "country": "United States",
-        "countryCode": "US",
-        "region": "NC",
-        "regionName": "North Carolina",
-        "city": "Durham",
-        "zip": "27709",
-        "lat": 35.9106,
-        "lon": -78.8766,
-        "timezone": "America/New_York",
-        "isp": "MCNC",
-        "org": "MCNC",
-        "as": "AS81 MCNC",
-        "query": "152.22.117.27",
-        "response_time": 0.05531907081604004
-    },
     "http://152.26.229.34:9443": {
         "status": "success",
         "country": "United States",
@@ -31,24 +14,24 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.49.27",
-        "response_time": 0.08032727241516113
+        "response_time": 0.05540347099304199
     },
-    "http://152.26.229.46:9443": {
+    "http://152.26.231.42:9443": {
         "status": "success",
         "country": "United States",
         "countryCode": "US",
         "region": "NC",
         "regionName": "North Carolina",
         "city": "Durham",
-        "zip": "27703",
-        "lat": 35.9806,
-        "lon": -78.8426,
+        "zip": "27709",
+        "lat": 35.9106,
+        "lon": -78.8766,
         "timezone": "America/New_York",
         "isp": "MCNC",
         "org": "MCNC",
         "as": "AS81 MCNC",
-        "query": "152.22.53.27",
-        "response_time": 0.056619882583618164
+        "query": "152.22.117.27",
+        "response_time": 0.04769158363342285
     },
     "http://152.26.229.47:9443": {
         "status": "success",
@@ -65,7 +48,24 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.48.25",
-        "response_time": 0.05452728271484375
+        "response_time": 0.0534970760345459
+    },
+    "http://152.26.229.46:9443": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "NC",
+        "regionName": "North Carolina",
+        "city": "Durham",
+        "zip": "27703",
+        "lat": 35.9806,
+        "lon": -78.8426,
+        "timezone": "America/New_York",
+        "isp": "MCNC",
+        "org": "MCNC",
+        "as": "AS81 MCNC",
+        "query": "152.22.53.27",
+        "response_time": 0.05931591987609863
     },
     "http://152.26.231.86:9443": {
         "status": "success",
@@ -82,7 +82,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.116.28",
-        "response_time": 0.058373212814331055
+        "response_time": 0.06123208999633789
     },
     "http://152.26.231.94:9443": {
         "status": "success",
@@ -99,7 +99,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.112.24",
-        "response_time": 0.05372118949890137
+        "response_time": 0.05710577964782715
     },
     "http://152.26.229.86:9443": {
         "status": "success",
@@ -116,7 +116,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.50.22",
-        "response_time": 0.055588483810424805
+        "response_time": 0.05691885948181152
     },
     "http://152.26.229.42:9443": {
         "status": "success",
@@ -133,7 +133,7 @@
         "org": "MCNC",
         "as": "AS81 MCNC",
         "query": "152.22.51.22",
-        "response_time": 0.06128835678100586
+        "response_time": 0.06949663162231445
     },
     "socks4://23.19.244.109:1080": {
         "status": "success",
@@ -150,24 +150,7 @@
         "org": "LeaseWeb USA, Inc. New York",
         "as": "AS396362 Leaseweb USA, Inc.",
         "query": "23.19.244.109",
-        "response_time": 0.058977365493774414
-    },
-    "socks4://172.233.155.25:1080": {
-        "status": "success",
-        "country": "United States",
-        "countryCode": "US",
-        "region": "CA",
-        "regionName": "California",
-        "city": "Los Angeles",
-        "zip": "90060",
-        "lat": 34.0544,
-        "lon": -118.2441,
-        "timezone": "America/Los_Angeles",
-        "isp": "Akamai Technologies, Inc.",
-        "org": "Akamai Technologies, Inc.",
-        "as": "AS63949 Akamai Connected Cloud",
-        "query": "172.233.155.25",
-        "response_time": 0.18888568878173828
+        "response_time": 0.04719829559326172
     },
     "socks4://172.104.209.44:1080": {
         "status": "success",
@@ -184,7 +167,24 @@
         "org": "Linode",
         "as": "AS63949 Akamai Connected Cloud",
         "query": "172.104.209.44",
-        "response_time": 0.22915220260620117
+        "response_time": 0.09900593757629395
+    },
+    "socks5://172.104.209.44:1080": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "NJ",
+        "regionName": "New Jersey",
+        "city": "Cedar Knolls",
+        "zip": "07927",
+        "lat": 40.8229,
+        "lon": -74.4592,
+        "timezone": "America/New_York",
+        "isp": "Akamai Technologies",
+        "org": "Linode",
+        "as": "AS63949 Akamai Connected Cloud",
+        "query": "172.104.209.44",
+        "response_time": 0.08033990859985352
     },
     "socks4://72.167.46.207:1080": {
         "status": "success",
@@ -201,9 +201,9 @@
         "org": "GoDaddy.com, LLC",
         "as": "AS26496 GoDaddy.com, LLC",
         "query": "72.167.46.207",
-        "response_time": 0.20544862747192383
+        "response_time": 0.3042299747467041
     },
-    "socks5://172.233.155.25:1080": {
+    "socks4://172.233.155.25:1080": {
         "status": "success",
         "country": "United States",
         "countryCode": "US",
@@ -218,7 +218,7 @@
         "org": "Akamai Technologies, Inc.",
         "as": "AS63949 Akamai Connected Cloud",
         "query": "172.233.155.25",
-        "response_time": 0.26503705978393555
+        "response_time": 0.31570911407470703
     },
     "socks5://72.167.46.207:1080": {
         "status": "success",
@@ -235,26 +235,60 @@
         "org": "GoDaddy.com, LLC",
         "as": "AS26496 GoDaddy.com, LLC",
         "query": "72.167.46.207",
-        "response_time": 0.2645249366760254
+        "response_time": 0.26007699966430664
     },
-    "socks4://31.170.22.127:1080": {
+    "socks5://192.169.140.98:45739": {
         "status": "success",
-        "country": "Latvia",
-        "countryCode": "LV",
-        "region": "RIX",
-        "regionName": "R\u012bga",
-        "city": "Riga",
-        "zip": "LV-1063",
-        "lat": 56.921,
-        "lon": 24.1698,
-        "timezone": "Europe/Riga",
-        "isp": "Sia Nano IT",
-        "org": "NANO-ADTECH",
-        "as": "AS43513 Sia Nano IT",
-        "query": "31.170.22.127",
-        "response_time": 0.43517494201660156
+        "country": "United States",
+        "countryCode": "US",
+        "region": "AZ",
+        "regionName": "Arizona",
+        "city": "Tempe",
+        "zip": "85284",
+        "lat": 33.3359,
+        "lon": -111.894,
+        "timezone": "America/Phoenix",
+        "isp": "GoDaddy.com, LLC",
+        "org": "GoDaddy.com, LLC",
+        "as": "AS398101 GoDaddy.com, LLC",
+        "query": "192.169.140.98",
+        "response_time": 0.32526350021362305
     },
-    "http://4.158.61.222:8080": {
+    "socks5://172.233.155.25:1080": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "CA",
+        "regionName": "California",
+        "city": "Los Angeles",
+        "zip": "90060",
+        "lat": 34.0544,
+        "lon": -118.2441,
+        "timezone": "America/Los_Angeles",
+        "isp": "Akamai Technologies, Inc.",
+        "org": "Akamai Technologies, Inc.",
+        "as": "AS63949 Akamai Connected Cloud",
+        "query": "172.233.155.25",
+        "response_time": 0.32897067070007324
+    },
+    "socks5://165.22.204.32:59166": {
+        "status": "success",
+        "country": "The Netherlands",
+        "countryCode": "NL",
+        "region": "NH",
+        "regionName": "North Holland",
+        "city": "Amsterdam",
+        "zip": "1098",
+        "lat": 52.352,
+        "lon": 4.9392,
+        "timezone": "Europe/Amsterdam",
+        "isp": "DigitalOcean, LLC",
+        "org": "DigitalOcean, LLC",
+        "as": "AS14061 DigitalOcean, LLC",
+        "query": "165.22.204.32",
+        "response_time": 0.3500800132751465
+    },
+    "http://4.158.55.159:8080": {
         "status": "success",
         "country": "United Kingdom",
         "countryCode": "GB",
@@ -268,8 +302,8 @@
         "isp": "Microsoft Corporation",
         "org": "Microsoft Azure Cloud (uksouth)",
         "as": "AS8075 Microsoft Corporation",
-        "query": "20.162.146.56",
-        "response_time": 0.5289244651794434
+        "query": "4.250.53.91",
+        "response_time": 0.5403258800506592
     },
     "socks4://192.162.232.15:1080": {
         "status": "success",
@@ -286,7 +320,24 @@
         "org": "VINASTERISK, PP",
         "as": "AS21228 VINASTERISK, PP",
         "query": "192.162.232.15",
-        "response_time": 0.5157327651977539
+        "response_time": 0.4217402935028076
+    },
+    "socks4://216.238.116.202:1080": {
+        "status": "success",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "SP",
+        "regionName": "S\u00e3o Paulo",
+        "city": "Osasco",
+        "zip": "06268",
+        "lat": -23.5312,
+        "lon": -46.7901,
+        "timezone": "America/Sao_Paulo",
+        "isp": "The Constant Company, LLC",
+        "org": "The Constant Company, LLC",
+        "as": "AS20473 The Constant Company, LLC",
+        "query": "216.238.116.202",
+        "response_time": 0.6603519916534424
     },
     "http://160.86.242.23:8080": {
         "status": "success",
@@ -303,7 +354,24 @@
         "org": "Sony Network Communications Inc.",
         "as": "AS2527 Sony Network Communications Inc.",
         "query": "160.86.242.23",
-        "response_time": 0.6649250984191895
+        "response_time": 0.719240665435791
+    },
+    "socks5://216.238.116.202:1080": {
+        "status": "success",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "SP",
+        "regionName": "S\u00e3o Paulo",
+        "city": "Osasco",
+        "zip": "06268",
+        "lat": -23.5312,
+        "lon": -46.7901,
+        "timezone": "America/Sao_Paulo",
+        "isp": "The Constant Company, LLC",
+        "org": "The Constant Company, LLC",
+        "as": "AS20473 The Constant Company, LLC",
+        "query": "216.238.116.202",
+        "response_time": 0.7184877395629883
     },
     "http://77.242.98.39:8080": {
         "status": "success",
@@ -320,41 +388,24 @@
         "org": "JSC Russian Company",
         "as": "AS15493 \"Russian company\" LLC",
         "query": "77.242.98.39",
-        "response_time": 0.8022267818450928
+        "response_time": 0.8855190277099609
     },
-    "socks4://172.104.164.41:1080": {
+    "socks4://118.97.107.65:5430": {
         "status": "success",
-        "country": "Singapore",
-        "countryCode": "SG",
-        "region": "03",
-        "regionName": "North West",
-        "city": "Singapore",
-        "zip": "858877",
-        "lat": 1.35208,
-        "lon": 103.82,
-        "timezone": "Asia/Singapore",
-        "isp": "Akamai Technologies",
-        "org": "Linode",
-        "as": "AS63949 Akamai Connected Cloud",
-        "query": "172.104.164.41",
-        "response_time": 0.8700082302093506
-    },
-    "socks4://147.124.212.31:55630": {
-        "status": "success",
-        "country": "United States",
-        "countryCode": "US",
-        "region": "TX",
-        "regionName": "Texas",
-        "city": "Dallas",
-        "zip": "75270",
-        "lat": 32.7797,
-        "lon": -96.8022,
-        "timezone": "America/Chicago",
-        "isp": "Majestic Hosting Solutions, LLC",
-        "org": "Majestic Hosting Solutions, LLC",
-        "as": "AS396073 Majestic Hosting Solutions, LLC",
-        "query": "147.124.212.31",
-        "response_time": 0.9679176807403564
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "region": "JK",
+        "regionName": "Jakarta",
+        "city": "Rawasari",
+        "zip": "",
+        "lat": -6.188,
+        "lon": 106.8545,
+        "timezone": "Asia/Jakarta",
+        "isp": "PT. TELKOM INDONESIA",
+        "org": "",
+        "as": "AS7713 PT Telekomunikasi Indonesia",
+        "query": "118.97.107.65",
+        "response_time": 1.005014181137085
     },
     "socks4://194.195.122.51:1080": {
         "status": "success",
@@ -371,26 +422,26 @@
         "org": "Linode",
         "as": "AS63949 Akamai Connected Cloud",
         "query": "194.195.122.51",
-        "response_time": 1.0407614707946777
+        "response_time": 1.0884747505187988
     },
-    "http://189.240.60.169:9090": {
+    "socks4://64.6.254.91:63397": {
         "status": "success",
-        "country": "Mexico",
-        "countryCode": "MX",
-        "region": "CMX",
-        "regionName": "Mexico City",
-        "city": "Iztacalco",
-        "zip": "08100",
-        "lat": 19.413,
-        "lon": -99.0682,
-        "timezone": "America/Mexico_City",
-        "isp": "Uninet S.A. de C.V.",
-        "org": "UNINET",
-        "as": "AS8151 UNINET",
-        "query": "189.240.60.168",
-        "response_time": 1.2727961540222168
+        "country": "United States",
+        "countryCode": "US",
+        "region": "NY",
+        "regionName": "New York",
+        "city": "Buffalo",
+        "zip": "14202",
+        "lat": 42.893,
+        "lon": -78.8753,
+        "timezone": "America/New_York",
+        "isp": "HostPapa",
+        "org": "HostPapa",
+        "as": "AS11989 HostPapa",
+        "query": "64.6.254.91",
+        "response_time": 1.1327722072601318
     },
-    "socks5://172.104.164.41:1080": {
+    "socks4://172.104.164.41:1080": {
         "status": "success",
         "country": "Singapore",
         "countryCode": "SG",
@@ -405,7 +456,7 @@
         "org": "Linode",
         "as": "AS63949 Akamai Connected Cloud",
         "query": "172.104.164.41",
-        "response_time": 1.1593647003173828
+        "response_time": 1.1534521579742432
     },
     "socks5://194.195.122.51:1080": {
         "status": "success",
@@ -422,60 +473,77 @@
         "org": "Linode",
         "as": "AS63949 Akamai Connected Cloud",
         "query": "194.195.122.51",
-        "response_time": 1.2043259143829346
+        "response_time": 1.2916302680969238
     },
-    "http://161.34.40.117:3128": {
+    "socks4://31.170.22.127:1080": {
         "status": "success",
-        "country": "Japan",
-        "countryCode": "JP",
-        "region": "12",
-        "regionName": "Chiba",
-        "city": "Higashifunabashi",
-        "zip": "273-0001",
-        "lat": 35.7074,
-        "lon": 139.9955,
-        "timezone": "Asia/Tokyo",
-        "isp": "NTT PC Communications, Inc.",
-        "org": "NTTPC Communications, Inc",
-        "as": "AS2514 NTT PC Communications, Inc.",
-        "query": "161.34.40.117",
-        "response_time": 1.620255708694458
+        "country": "Latvia",
+        "countryCode": "LV",
+        "region": "RIX",
+        "regionName": "R\u012bga",
+        "city": "Riga",
+        "zip": "LV-1063",
+        "lat": 56.921,
+        "lon": 24.1698,
+        "timezone": "Europe/Riga",
+        "isp": "Sia Nano IT",
+        "org": "NANO-ADTECH",
+        "as": "AS43513 Sia Nano IT",
+        "query": "31.170.22.127",
+        "response_time": 1.486495018005371
     },
-    "http://161.34.40.34:3128": {
+    "socks5://172.104.164.41:1080": {
         "status": "success",
-        "country": "Japan",
-        "countryCode": "JP",
-        "region": "12",
-        "regionName": "Chiba",
-        "city": "Higashifunabashi",
-        "zip": "273-0001",
-        "lat": 35.7074,
-        "lon": 139.9955,
-        "timezone": "Asia/Tokyo",
-        "isp": "NTT PC Communications, Inc.",
-        "org": "NTTPC Communications, Inc",
-        "as": "AS2514 NTT PC Communications, Inc.",
-        "query": "161.34.40.34",
-        "response_time": 1.743687629699707
+        "country": "Singapore",
+        "countryCode": "SG",
+        "region": "03",
+        "regionName": "North West",
+        "city": "Singapore",
+        "zip": "858877",
+        "lat": 1.35208,
+        "lon": 103.82,
+        "timezone": "Asia/Singapore",
+        "isp": "Akamai Technologies",
+        "org": "Linode",
+        "as": "AS63949 Akamai Connected Cloud",
+        "query": "172.104.164.41",
+        "response_time": 1.4825060367584229
     },
-    "http://58.19.22.61:3128": {
+    "http://4.159.61.189:8080": {
         "status": "success",
-        "country": "China",
-        "countryCode": "CN",
-        "region": "HB",
-        "regionName": "Hubei",
-        "city": "Wuhan",
-        "zip": "",
-        "lat": 30.589,
-        "lon": 114.2681,
-        "timezone": "Asia/Shanghai",
-        "isp": "CNC Group CHINA169 Hubei Province Network",
-        "org": "",
-        "as": "AS4837 CHINA UNICOM China169 Backbone",
-        "query": "58.19.22.61",
-        "response_time": 1.9753186702728271
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "region": "ENG",
+        "regionName": "England",
+        "city": "City of London",
+        "zip": "EC3R 7LP",
+        "lat": 51.5113,
+        "lon": -0.079212,
+        "timezone": "Europe/London",
+        "isp": "Microsoft Corporation",
+        "org": "Microsoft Azure Cloud (uksouth)",
+        "as": "AS8075 Microsoft Corporation",
+        "query": "13.87.99.124",
+        "response_time": 1.6239814758300781
     },
-    "http://189.240.60.171:9090": {
+    "socks4://104.236.114.255:25466": {
+        "status": "success",
+        "country": "United States",
+        "countryCode": "US",
+        "region": "NJ",
+        "regionName": "New Jersey",
+        "city": "Clifton",
+        "zip": "07014",
+        "lat": 40.8364,
+        "lon": -74.1403,
+        "timezone": "America/New_York",
+        "isp": "DigitalOcean, LLC",
+        "org": "DigitalOcean, LLC",
+        "as": "AS14061 DigitalOcean, LLC",
+        "query": "104.236.114.255",
+        "response_time": 1.5957422256469727
+    },
+    "http://189.240.60.169:9090": {
         "status": "success",
         "country": "Mexico",
         "countryCode": "MX",
@@ -490,57 +558,23 @@
         "org": "UNINET",
         "as": "AS8151 UNINET",
         "query": "189.240.60.168",
-        "response_time": 2.2476370334625244
+        "response_time": 1.978611707687378
     },
-    "socks4://103.14.251.16:4153": {
+    "http://35.220.254.137:8080": {
         "status": "success",
-        "country": "Cambodia",
-        "countryCode": "KH",
-        "region": "12",
-        "regionName": "Phnom Penh",
-        "city": "Phnom Penh",
+        "country": "Hong Kong",
+        "countryCode": "HK",
+        "region": "HCW",
+        "regionName": "Central and Western District",
+        "city": "Hong Kong",
         "zip": "",
-        "lat": 11.5583,
-        "lon": 104.9121,
-        "timezone": "Asia/Phnom_Penh",
-        "isp": "SIGROUPS",
-        "org": "",
-        "as": "AS131207 SINET, Cambodia's specialist Internet and Telecom Service Provider.",
-        "query": "103.14.251.16",
-        "response_time": 2.197371006011963
-    },
-    "http://161.34.40.115:3128": {
-        "status": "success",
-        "country": "Japan",
-        "countryCode": "JP",
-        "region": "12",
-        "regionName": "Chiba",
-        "city": "Higashifunabashi",
-        "zip": "273-0001",
-        "lat": 35.7074,
-        "lon": 139.9955,
-        "timezone": "Asia/Tokyo",
-        "isp": "NTT PC Communications, Inc.",
-        "org": "NTTPC Communications, Inc",
-        "as": "AS2514 NTT PC Communications, Inc.",
-        "query": "161.34.40.115",
-        "response_time": 2.6915221214294434
-    },
-    "http://161.34.40.36:3128": {
-        "status": "success",
-        "country": "Japan",
-        "countryCode": "JP",
-        "region": "12",
-        "regionName": "Chiba",
-        "city": "Higashifunabashi",
-        "zip": "273-0001",
-        "lat": 35.7074,
-        "lon": 139.9955,
-        "timezone": "Asia/Tokyo",
-        "isp": "NTT PC Communications, Inc.",
-        "org": "NTTPC Communications, Inc",
-        "as": "AS2514 NTT PC Communications, Inc.",
-        "query": "161.34.40.36",
-        "response_time": 2.7680208683013916
+        "lat": 22.3193,
+        "lon": 114.1693,
+        "timezone": "Asia/Hong_Kong",
+        "isp": "Google LLC",
+        "org": "Google Cloud (asia-east2)",
+        "as": "AS15169 Google LLC",
+        "query": "35.220.254.137",
+        "response_time": 2.3865864276885986
     }
 }
