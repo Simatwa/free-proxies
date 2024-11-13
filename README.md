@@ -53,7 +53,7 @@ Free to use **http**, **socks4** and **socks5** proxies that gets updated every 
 
 ## Python SDK/API
 
-- There's [Simatwa/pyfreeproxies](https://github.com/Simatwa/pyfreeproxies) which works like a charm.
+- There's [pyfreeproxies](https://github.com/Simatwa/pyfreeproxies) which works like a charm.
 
 ## Credits
 
