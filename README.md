@@ -1,5 +1,8 @@
 # free-proxies
-Free to use **http**, **socks4** and **socks5** proxies that gets updated every 30 minutes.
+Free to use **http**, **socks4** and **socks5** proxies that gets updated every  ~~30 minutes.~~
+
+> [!NOTE]
+> The proxies aren't updated periodically anymore. If you can [host this project](https://github.com/Simatwa/free-proxies/issues/3) and run the Github action, will be a great move.
 
 ## Download
 
@@ -50,9 +53,6 @@ Free to use **http**, **socks4** and **socks5** proxies that gets updated every 
    ```
    https://raw.githubusercontent.com/AlphaBei254/free-proxies/master/files/proxies.log
    ```
-
-> [!IMPORTANT]
-> Github disabled `actions` for [Simatwa](https://github.com/Simatwa)'s account that's why the links are pointing to a [fork of this project](https://github.com/AlphaBei254/free-proxies).
 
 ## Python SDK/API
 
